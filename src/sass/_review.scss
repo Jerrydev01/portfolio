@@ -1,14 +1,88 @@
-@use '../sass/_color-text-mixins.scss' as *;
-.review-sec{
+@use '../sass/_color-text-mixins.scss'as *;
+
+.review-sec {
     padding: $margin-sec;
     background-color: $bg-sec-color;
     text-align: center;
     width: 100%;
     @include center ();
-    div:nth-child(1){
-        p{
+
+    .review-header {
+        p {
             width: 40vw;
             margin: 2rem auto;
+        }
+    }
+
+    .mySwiperJerry {
+        width: 100%;
+        margin: 5rem 2rem 2rem 2rem;
+
+        .review-container {
+
+            margin-top: 5rem;
+
+            .slider-review {
+                padding-inline: 2rem;
+                border-radius: 1rem;
+                max-height: 20rem;
+
+                img {
+                    position: relative;
+                    display: block;
+                    top: -3rem;
+                    object-fit: cover;
+                    width: 6rem;
+                    aspect-ratio: 1 / 1;
+                    margin: 0 auto;
+                    clip-path: circle();
+                }
+
+            }
+
+            .swiper-text {
+                position: relative;
+                top: -1.5rem;
+
+                p {
+                    font-size: 1.4rem;
+                }
+
+                hr {
+                    margin-block: 1.5rem;
+                    border-bottom: 0;
+                    border-color: rgba(89, 86, 86, 0.078);
+                }
+
+                small {
+                    font-size: 1rem;
+                   
+                }
+            }
+        }
+
+        .next,
+        .prev {
+            // position: absolute;
+            top: 90%;
+            width: 950px;
+            margin-inline: 1rem;
+
+            i {
+                background-color: $white;
+                color: $header-text;
+                padding: 1rem;
+                border-radius: 50%;
+                width: 5rem;
+                display:grid;
+                place-items: center;
+                height: 5rem;
+                @include box-l();
+                &:hover {
+                    background-color: $header-text;
+                    color: white;
+                }
+            }
         }
     }
 }

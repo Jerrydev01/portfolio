@@ -24,7 +24,7 @@
             font-family: 'Sacramento', cursive;
             font-size: 3rem;
             font-weight: bold;
-            animation: colorChange ease-in-out 2s 1s infinite alternate;
+            animation: colorChange ease-in-out 5s 1s infinite alternate;
         }
         @keyframes colorChange {
             0% {  
@@ -98,6 +98,17 @@
 
             p {
                 max-width: 300px;
+            }
+        }
+        .cta{
+            background-color: $header-text;
+            padding: 1rem 1.5rem;
+            width: fit-content;
+            margin-top: 2rem;
+            border-radius: .5rem;
+            a{
+                color: $white;
+                font-size: 2.5rem;
             }
         }
 

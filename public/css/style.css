@@ -10,7 +10,7 @@
  * Released on: April 8, 2022
  */
 :root {
-  --swiper-theme-color: #007aff ;
+  --swiper-theme-color: #007aff;
 }
 
 .swiper {
@@ -248,7 +248,7 @@
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: "prev";
+  content: "";
 }
 
 .swiper-button-next,
@@ -259,7 +259,7 @@
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: "next";
+  content: "";
 }
 
 .swiper-button-lock {
@@ -819,7 +819,7 @@ ul {
   font-family: "Sacramento", cursive;
   font-size: 3rem;
   font-weight: bold;
-  animation: colorChange ease-in-out 2s 1s infinite alternate;
+  animation: colorChange ease-in-out 5s 1s infinite alternate;
 }
 @keyframes colorChange {
   0% {
@@ -880,6 +880,17 @@ ul {
 }
 #header .header-text .header-text-flex p {
   max-width: 300px;
+}
+#header .header-text .cta {
+  background-color: #0D2F3F;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+#header .header-text .cta a {
+  color: white;
+  font-size: 2.5rem;
 }
 #header .header-text .email {
   margin-top: 15rem;
@@ -1138,9 +1149,69 @@ ul {
   display: grid;
   place-items: center;
 }
-.review-sec div:nth-child(1) p {
+.review-sec .review-header p {
   width: 40vw;
   margin: 2rem auto;
+}
+.review-sec .mySwiperJerry {
+  width: 100%;
+  margin: 5rem 2rem 2rem 2rem;
+}
+.review-sec .mySwiperJerry .review-container {
+  margin-top: 5rem;
+}
+.review-sec .mySwiperJerry .review-container .slider-review {
+  padding-inline: 2rem;
+  border-radius: 1rem;
+  max-height: 20rem;
+}
+.review-sec .mySwiperJerry .review-container .slider-review img {
+  position: relative;
+  display: block;
+  top: -3rem;
+  object-fit: cover;
+  width: 6rem;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  clip-path: circle();
+}
+.review-sec .mySwiperJerry .review-container .swiper-text {
+  position: relative;
+  top: -1.5rem;
+}
+.review-sec .mySwiperJerry .review-container .swiper-text p {
+  font-size: 1.4rem;
+}
+.review-sec .mySwiperJerry .review-container .swiper-text hr {
+  margin-block: 1.5rem;
+  border-bottom: 0;
+  border-color: rgba(89, 86, 86, 0.078);
+}
+.review-sec .mySwiperJerry .review-container .swiper-text small {
+  font-size: 1rem;
+}
+.review-sec .mySwiperJerry .next,
+.review-sec .mySwiperJerry .prev {
+  top: 90%;
+  width: 950px;
+  margin-inline: 1rem;
+}
+.review-sec .mySwiperJerry .next i,
+.review-sec .mySwiperJerry .prev i {
+  background-color: white;
+  color: #0D2F3F;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  display: grid;
+  place-items: center;
+  height: 5rem;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+.review-sec .mySwiperJerry .next i:hover,
+.review-sec .mySwiperJerry .prev i:hover {
+  background-color: #0D2F3F;
+  color: white;
 }
 
 @media screen and (min-width: 1050px) {
