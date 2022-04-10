@@ -1,0 +1,75 @@
+        @use '../sass/_color-text-mixins.scss' as *;
+        // desktop screen
+        @media screen and (min-width: 1050px) {
+            body {
+                font-size: $paragraph;
+            }
+            h1 {
+                font-size: $heading1;
+            }
+            h2 {
+                font-size: $heading2;
+            }
+            a {
+                font-size: $link;
+            }
+        }
+        
+        // tablet screen
+        @media screen and (max-width: 1024px) {
+            body {
+                font-size: 1.6rem;
+            }
+            h1 {
+                font-size: 3.6rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+            a {
+                font-size: 1.5rem;
+            }
+            header {
+                .header-flex {
+                    .img-header img {
+                        max-width: 35vw;
+                    }
+                }
+            }
+        }
+        
+        // mobile screen
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 1.6rem;
+            }
+            h1 {
+                font-size: 3.4rem;
+            }
+            h2 {
+                font-size: 2.8rem;
+            }
+            a {
+                font-size: 1.4rem;
+            }
+            header {
+                padding: $margin-s;
+                height: 100%;
+                .header-flex {
+                    flex-direction: column;
+                    text-align: center;
+                    .header-parag-sec {
+                        max-width: 90%;
+                    }
+                    .img-header img {
+                        position: relative;
+                        top: 6rem;
+                        max-width: 90vw;
+                        min-height: 100%;
+                    }
+                }
+                .social a {
+                    display: none;
+                }
+            }
+        }

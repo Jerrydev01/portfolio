@@ -1,0 +1,67 @@
+@use '../sass/_color-text-mixins.scss'as *;
+
+#about {
+    @include center();
+
+    .about-sec {
+        margin: 10rem 20rem;
+        display: flex;
+        gap: 7rem;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            display: inline-block;
+            margin-block: 1rem;
+            padding: 1.5rem;
+            background-color: $bg-sec-color2;
+            box-shadow: 0px 0px 9px 1px rgb(219, 217, 212);
+            border-radius: 1rem;
+
+            .about-specials {
+                display: flex;
+                width: 20vw;
+                padding-block: 1rem;
+                gap: 1rem;
+
+                img {
+                    width: 5rem;
+                    animation: imgExp ease-in-out 2s infinite alternate;
+                }
+
+            }
+
+            @keyframes imgExp {
+                from {
+                    opacity: 0.4;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 20px 11px rgb(219, 217, 212);
+            }
+        }
+
+        .about-header {
+            h2 {
+                font-size: 4rem;
+            }
+
+            .total-projects {
+                display: flex;
+                margin-top: 2rem;
+                gap: 5rem;
+                align-items: center;
+
+                p {
+                    font-size: 1.4rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

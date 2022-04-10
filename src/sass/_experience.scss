@@ -1,0 +1,54 @@
+@use '../sass/_color-text-mixins.scss' as *;
+
+#experience{
+   @include center();
+    background-color: $bg-sec-color;
+    .experience-sec{
+        margin: $margin-sec;
+        h2{
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .experence-list{
+         display: grid;
+         grid-template-columns: 30rem 1fr;
+            gap: 2rem;
+            .esp1{
+                margin-top:3rem;
+                div{
+                    margin-bottom: 6rem;
+                }
+            }
+            .esp2{
+                display: grid;
+                grid-template-columns: 5rem 1fr;
+                justify-content: space-between;
+                gap: 2rem;
+                margin-top: 2rem;
+                    img {
+
+                       height: 40rem;
+                       width: 100%;
+                        margin-bottom:1rem;
+                        animation: imgExp ease-in-out 2s infinite alternate;
+                    }
+                    @keyframes imgExp {
+                        from {
+                            opacity: 0.4;
+                        }
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                    h3{
+                        padding-bottom: 1rem;
+                    }
+              
+                div:nth-child(n + 1){
+                    padding-bottom: 1.5rem;
+                  
+                }
+            }
+        }
+    }
+}

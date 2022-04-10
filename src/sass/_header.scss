@@ -1,0 +1,167 @@
+@use '../sass/_color-text-mixins.scss'as *;
+
+#header {
+    background-color: $bg-sec-color;
+    background-image: url('../img/jerry4.png');
+    height: 80rem;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center bottom;
+
+    .header-sec {
+        background-color: $bg-sec-color;
+        width: 100%;
+        padding: $margin-h;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        box-shadow: 0px 0px 10px 5px rgb(219, 217, 212);
+
+        .logo a {
+            font-family: 'Sacramento', cursive;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: colorChange ease-in-out 2s 1s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% {  
+                color: $header-text;
+                
+        }
+            50% {
+                color: $clr-paragraph2;
+            }
+            75% {
+                color: #FF6600;
+            }
+
+            100% {
+                color:#4353FF;
+            }
+        }
+
+        .navmenue {
+            display: flex;
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+
+                a {
+
+                    &:hover {
+                        color: $clr-paragraph2;
+                        border-bottom: 1px solid $clr-paragraph2;
+
+                    }
+                }
+
+                .phone {
+                    background-color: $white;
+                    margin: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    justify-content: center;
+                    box-shadow: 0px 0px 39px 11px rgb(219, 217, 212);
+                    a:hover{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-text {
+        margin: $margin-l;
+
+        .header-text-flex {
+            display: flex;
+            padding-top: 10rem;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                color: $header-text;
+                font-size: 6rem;
+                max-width: 38rem;
+            }
+
+            p {
+                max-width: 300px;
+            }
+        }
+
+        .email {
+            margin-top: 15rem;
+
+            a {
+                color: $clr-paragraph2;
+            }
+        }
+
+        .mobile-img {
+            display: none;
+        }
+
+        .exp-header {
+            margin-top: 10rem;
+            display: flex;
+            justify-content: space-between;
+
+            .exp-years {
+                display: flex;
+                justify-content: space-between;
+                gap: 1em;
+                align-items: center;
+
+                h2 {
+                    color: $header-text;
+                    font-size: 6rem;
+                }
+            }
+          
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

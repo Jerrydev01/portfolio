@@ -1,0 +1,14 @@
+@use '../sass/_color-text-mixins.scss' as *;
+.review-sec{
+    padding: $margin-sec;
+    background-color: $bg-sec-color;
+    text-align: center;
+    width: 100%;
+    @include center ();
+    div:nth-child(1){
+        p{
+            width: 40vw;
+            margin: 2rem auto;
+        }
+    }
+}

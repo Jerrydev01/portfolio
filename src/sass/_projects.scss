@@ -1,0 +1,101 @@
+@use '../sass/_color-text-mixins.scss'as *;
+
+.portfolio-sec {
+    padding: $margin-sec;
+    display: block;
+    display: grid;
+    place-items: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    .container-portfolio {
+        .row-project {
+            .project-filter {
+                padding-inline: 1.5rem;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 3rem;
+
+                .filter-item {
+                    color: $white;
+                    font-size: 1.5rem;
+                    display: inline-block;
+                    border: 1px solid $bg-sec-color2;
+                    background-color: $header-text;
+                    border-radius: 2rem;
+                    cursor: pointer;
+                    padding: 1rem 2rem;
+                    transition: all 0.3s ease;
+
+                    &.active {
+                        color: $white;
+                        background-color: $clr-paragraph2;
+                    }
+
+                }
+            }
+
+            .grid-projects {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 1 / 1;
+                    cursor: pointer;
+                }
+                .project-h3{
+                    padding: 2rem 1rem;
+                   p{
+                       
+                       padding-top: .5rem;
+                    a{
+                        display: flex;
+                       align-items: center;
+                        color: $clr-paragraph2;
+                        i{
+                            padding-left: 1rem;
+                            animation: icon ease-in-out 1.5s infinite alternate;
+                        }
+                        @keyframes icon {
+                            from {
+                                transform: translateX(-5px);
+                            }
+                            to{
+                                transform: translateX(0)
+                            }
+                        }
+                    }
+                   }
+                }
+
+                .project-item {
+                    @include box-l() ;
+                    background: linear-gradient(145deg, #f8f7f1, #ffffff);
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    &.show {
+                        animation: fadeIn 0.5s ease;
+                    }
+                    &.hide {
+                        display: none;
+                    }
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                }
+            }
+        }
+    }
+}
+
+}
