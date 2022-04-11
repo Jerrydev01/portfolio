@@ -1,4 +1,26 @@
 @use '../sass/_color-text-mixins.scss'as *;
+.logo a {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: colorChange ease-in-out 5s 1s infinite alternate;
+}
+@keyframes colorChange {
+    0% {  
+        color: $header-text;
+        
+}
+    50% {
+        color: $clr-paragraph2;
+    }
+    75% {
+        color: #FF6600;
+    }
+
+    100% {
+        color:#4353FF;
+    }
+}
 
 #header {
     background-color: $bg-sec-color;
@@ -20,28 +42,7 @@
         top: 0;
         box-shadow: 0px 0px 10px 5px rgb(219, 217, 212);
 
-        .logo a {
-            font-family: 'Sacramento', cursive;
-            font-size: 3rem;
-            font-weight: bold;
-            animation: colorChange ease-in-out 5s 1s infinite alternate;
-        }
-        @keyframes colorChange {
-            0% {  
-                color: $header-text;
-                
-        }
-            50% {
-                color: $clr-paragraph2;
-            }
-            75% {
-                color: #FF6600;
-            }
-
-            100% {
-                color:#4353FF;
-            }
-        }
+      
 
         .navmenue {
             display: flex;
@@ -53,6 +54,7 @@
                 gap: 2rem;
 
                 a {
+                    transition: all 0.5s ease;
 
                     &:hover {
                         color: $clr-paragraph2;
@@ -73,6 +75,7 @@
                     height: 50px;
                     justify-content: center;
                     box-shadow: 0px 0px 39px 11px rgb(219, 217, 212);
+                    transition: all 0.5s ease;
                     a:hover{
                         border: none;
                     }
@@ -106,9 +109,15 @@
             width: fit-content;
             margin-top: 2rem;
             border-radius: .5rem;
+            transition: all 0.5s ease;
+              
             a{
                 color: $white;
                 font-size: 2.5rem;
+              
+            }
+            &:hover {
+                background-color: $clr-paragraph2;
             }
         }
 

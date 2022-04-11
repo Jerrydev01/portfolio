@@ -1,0 +1,77 @@
+@use '../sass/_color-text-mixins.scss' as *;
+#contact {
+    padding: $margin-sec;
+    .footer-sec {
+       
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        .footer-one{
+            h3, a{
+                font-size: 2.5rem;
+                margin-top: 5rem;
+            }
+            a{
+                @include link2;
+                &:hover{
+                    opacity:0.5;
+                }
+            }
+        }
+        .footer-socials{
+            justify-self: flex-end;
+            i{
+                font-size: 3rem;
+                padding: 1rem 1rem 1rem 0;
+            }
+            .social-link{
+             margin-block: 1rem;
+          
+             a:hover{
+                color: $clr-paragraph2;
+                transition: all 0.5s ease;
+             }
+            }
+            .nav-footer{
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+                a:hover{
+                    @include link2;
+                }
+            }
+        }
+    }
+    
+    hr {
+        margin-block: 5rem;
+        border-color: rgba(0, 0, 0, 0.123);
+    }
+    .copyright{
+        .copy{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                display: flex;
+                justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+                .border{
+                   height: 2rem;
+                    border-right: 1px solid rgba(13, 47, 63, 0.552);
+                    
+                }
+               
+            }
+            .dev {
+                a{
+                    @include link2;
+                    &:hover{
+                        opacity:0.5;
+                    }
+                }
+            }
+        }
+    }
+}

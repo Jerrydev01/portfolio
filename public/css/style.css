@@ -795,6 +795,27 @@ ul {
   color: #0D2F3F;
 }
 
+.logo a {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  animation: colorChange ease-in-out 5s 1s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #0D2F3F;
+  }
+  50% {
+    color: #e7524e;
+  }
+  75% {
+    color: #FF6600;
+  }
+  100% {
+    color: #4353FF;
+  }
+}
 #header {
   background-color: #f8f7f1;
   background-image: url("../img/jerry4.png");
@@ -815,26 +836,6 @@ ul {
   top: 0;
   box-shadow: 0px 0px 10px 5px #dbd9d4;
 }
-#header .header-sec .logo a {
-  font-family: "Sacramento", cursive;
-  font-size: 3rem;
-  font-weight: bold;
-  animation: colorChange ease-in-out 5s 1s infinite alternate;
-}
-@keyframes colorChange {
-  0% {
-    color: #0D2F3F;
-  }
-  50% {
-    color: #e7524e;
-  }
-  75% {
-    color: #FF6600;
-  }
-  100% {
-    color: #4353FF;
-  }
-}
 #header .header-sec .navmenue {
   display: flex;
 }
@@ -843,6 +844,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+#header .header-sec .navmenue ul a {
+  transition: all 0.5s ease;
 }
 #header .header-sec .navmenue ul a:hover {
   color: #e7524e;
@@ -860,6 +864,7 @@ ul {
   height: 50px;
   justify-content: center;
   box-shadow: 0px 0px 39px 11px #dbd9d4;
+  transition: all 0.5s ease;
 }
 #header .header-sec .navmenue ul .phone a:hover {
   border: none;
@@ -887,10 +892,14 @@ ul {
   width: fit-content;
   margin-top: 2rem;
   border-radius: 0.5rem;
+  transition: all 0.5s ease;
 }
 #header .header-text .cta a {
   color: white;
   font-size: 2.5rem;
+}
+#header .header-text .cta:hover {
+  background-color: #e7524e;
 }
 #header .header-text .email {
   margin-top: 15rem;
@@ -1161,9 +1170,11 @@ ul {
   margin-top: 5rem;
 }
 .review-sec .mySwiperJerry .review-container .slider-review {
+  margin-top: 3rem;
   padding-inline: 2rem;
   border-radius: 1rem;
   max-height: 20rem;
+  transition: all 0.5s ease;
 }
 .review-sec .mySwiperJerry .review-container .slider-review img {
   position: relative;
@@ -1174,6 +1185,9 @@ ul {
   aspect-ratio: 1/1;
   margin: 0 auto;
   clip-path: circle();
+}
+.review-sec .mySwiperJerry .review-container .slider-review:hover {
+  transform: translateY(-4rem);
 }
 .review-sec .mySwiperJerry .review-container .swiper-text {
   position: relative;
@@ -1212,6 +1226,78 @@ ul {
 .review-sec .mySwiperJerry .prev i:hover {
   background-color: #0D2F3F;
   color: white;
+}
+
+#contact {
+  padding: 7rem 15rem;
+}
+#contact .footer-sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+#contact .footer-sec .footer-one h3, #contact .footer-sec .footer-one a {
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+#contact .footer-sec .footer-one a {
+  color: #e7524e;
+  border-bottom: 1px solid #e7524e;
+  transition: all 0.5s ease;
+}
+#contact .footer-sec .footer-one a:hover {
+  opacity: 0.5;
+}
+#contact .footer-sec .footer-socials {
+  justify-self: flex-end;
+}
+#contact .footer-sec .footer-socials i {
+  font-size: 3rem;
+  padding: 1rem 1rem 1rem 0;
+}
+#contact .footer-sec .footer-socials .social-link {
+  margin-block: 1rem;
+}
+#contact .footer-sec .footer-socials .social-link a:hover {
+  color: #e7524e;
+  transition: all 0.5s ease;
+}
+#contact .footer-sec .footer-socials .nav-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#contact .footer-sec .footer-socials .nav-footer a:hover {
+  color: #e7524e;
+  border-bottom: 1px solid #e7524e;
+  transition: all 0.5s ease;
+}
+#contact hr {
+  margin-block: 5rem;
+  border-color: rgba(0, 0, 0, 0.123);
+}
+#contact .copyright .copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact .copyright .copy .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#contact .copyright .copy .logo .border {
+  height: 2rem;
+  border-right: 1px solid rgba(13, 47, 63, 0.552);
+}
+#contact .copyright .copy .dev a {
+  color: #e7524e;
+  border-bottom: 1px solid #e7524e;
+  transition: all 0.5s ease;
+}
+#contact .copyright .copy .dev a:hover {
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 1050px) {

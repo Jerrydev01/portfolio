@@ -23,6 +23,12 @@ $margin-s: 2rem 4rem;
 @mixin box-l() {
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
 }
+
+@mixin link2 {
+    color: $clr-paragraph2;
+                border-bottom: 1px solid $clr-paragraph2;
+                transition: all 0.5s ease;
+}
 @mixin center() {
     margin: auto;
     display: grid;
