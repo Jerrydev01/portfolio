@@ -925,6 +925,16 @@ ul {
   color: #0D2F3F;
   font-size: 6rem;
 }
+#header .header-text .exp-header .skillsimg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  top: -3rem;
+  gap: 1rem;
+}
+#header .header-text .exp-header .skillsimg img {
+  width: 80px;
+}
 
 .swiper {
   width: 100%;
