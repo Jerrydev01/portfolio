@@ -88,7 +88,7 @@
             }
         }
 
-        // tablet screen
+        /*================= tablet screen================*/
         @media only screen and (min-width: 768px) and (max-width: 1000px) {
             body {
                 font-size: 1.6rem;
@@ -123,10 +123,14 @@
                             max-width: 75rem;
                             padding-bottom: 2rem;
                             text-align: center;
+
+                            br {
+                                display: none;
+                            }
                         }
 
                         p {
-                            max-width: 55rem;
+                            max-width: 50rem;
                             text-align: center;
                             margin-bottom: 2rem;
                         }
@@ -220,7 +224,7 @@
             .portfolio-sec {
                 padding: $margin-sec-landscape;
 
-                h2 {}
+
 
                 h3 {
                     font-size: 1.6rem
@@ -251,52 +255,161 @@
             }
 
             // footer section
-            #contact{
+            #contact {
                 padding: $margin-sec-landscape;
-               
+
             }
         }
 
         // mobile screen
-        // @media screen and (max-width: 768px) {
-        //     body {
-        //         font-size: 1.6rem;
-        //     }
+        @media only screen and (min-width: 300px) and (max-width: 600px) {
 
-        //     h1 {
-        //         font-size: 3.4rem;
-        //     }
+            body,
+            p {
+                font-size: 1.6rem;
+            }
 
-        //     h2 {
-        //         font-size: 2.8rem;
-        //     }
+            h1 {
+                font-size: 3.4rem;
+            }
 
-        //     a {
-        //         font-size: 1.4rem;
-        //     }
+            h2 {
+                font-size: 2.2rem;
+            }
 
-        //     header {
-        //         padding: $margin-s;
-        //         height: 100%;
+            h3 {
+                font-size: 1.8rem
+            }
 
-        //         .header-flex {
-        //             flex-direction: column;
-        //             text-align: center;
+            a {
+                font-size: 1.4rem;
+            }
 
-        //             .header-parag-sec {
-        //                 max-width: 90%;
-        //             }
+            // header section
+            #header {
+                background-image: none;
 
-        //             .img-header img {
-        //                 position: relative;
-        //                 top: 6rem;
-        //                 max-width: 90vw;
-        //                 min-height: 100%;
-        //             }
-        //         }
+                .header-text {
+                    margin: $margin-s;
 
-        //         .social a {
-        //             display: none;
-        //         }
-        //     }
-        // }
+                    .header-text-flex {
+                        display: flex;
+                        flex-direction: column;
+
+                        h1 {
+                            font-size: 4rem;
+
+                            margin-right: 4rem;
+                            padding-bottom: 2rem;
+
+                        }
+
+                        p {
+                            max-width: 75vw;
+
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    .cta {
+
+                        z-index: 2;
+                        position: relative;
+                        top: -2rem;
+                        margin-left: 1rem;
+
+                    }
+
+                    .mobile-img {
+                        display: block;
+
+                        img {
+                            max-width: 25rem;
+                            height: 100%;
+                            margin: 0 auto;
+                            position: relative;
+                            top: 2.3rem;
+                            z-index: 1;
+                        }
+                    }
+
+                    .exp-header {
+                        display: none;
+                    }
+                }
+
+            }
+
+            // about section
+            #about {
+                .about-sec {
+                    margin: 3rem 5rem;
+                    flex-direction: column;
+
+                    .special {
+                        order: 2;
+
+                        a {
+                            display: inline-block;
+
+                            .about-specials {
+                                width: 70vw;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+            // Experience section
+            #experience {
+                .experience-sec {
+                    margin: $margin-s;
+
+                    h2 {
+                        text-align: left;
+                        margin-left: 1rem;
+                    }
+
+                    .experence-list {
+                        grid-template-columns: 1fr;
+
+                        .esp1 {
+                            display: none;
+                        }
+
+                        .esp2 {
+                            img {
+                                height: 50rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            // project section
+            .portfolio-sec {
+                padding: $margin-s;
+
+                h3 {
+                    font-size: 1.6rem
+                }
+                .container-portfolio {
+                    .row-project {
+                        .project-filter{
+                            padding: 1.5rem 0;
+                            
+                        }
+                        .grid-projects {
+                            grid-template-columns:  1fr;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+
+           
+
+        }
