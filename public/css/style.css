@@ -1259,7 +1259,8 @@ ul {
 }
 #contact hr {
   margin-block: 5rem;
-  border-color: rgba(0, 0, 0, 0.123);
+  border-color: rgba(175, 171, 171, 0.398);
+  border-bottom: none;
 }
 #contact .copyright .copy {
   display: flex;
@@ -1274,7 +1275,7 @@ ul {
 }
 #contact .copyright .copy .logo .border {
   height: 2rem;
-  border-right: 1px solid rgba(13, 47, 63, 0.552);
+  border-right: 1px solid rgba(206, 207, 208, 0.893);
 }
 #contact .copyright .copy .dev a {
   color: #e7524e;
@@ -1313,6 +1314,10 @@ p {
 
   #about .about-sec {
     margin: 10rem 15rem;
+  }
+  #about .about-sec .special {
+    position: relative;
+    top: -3rem;
   }
 
   #experience .experience-sec {
@@ -1454,7 +1459,7 @@ p {
   }
   .review-sec .mySwiperJerry .next,
 .review-sec .mySwiperJerry .prev {
-    width: 450px;
+    display: none;
   }
 
   #contact {
@@ -1495,7 +1500,7 @@ p {
   }
   #header .header-text .header-text-flex h1 {
     font-size: 4rem;
-    margin-right: 4rem;
+    width: 75vw;
     padding-bottom: 2rem;
   }
   #header .header-text .header-text-flex p {
@@ -1512,11 +1517,10 @@ p {
     display: block;
   }
   #header .header-text .mobile-img img {
-    max-width: 25rem;
+    max-width: 26.2rem;
     height: 100%;
     margin: 0 auto;
-    position: relative;
-    top: 2.3rem;
+    position: static;
     z-index: 1;
   }
   #header .header-text .exp-header {
@@ -1529,6 +1533,8 @@ p {
   }
   #about .about-sec .special {
     order: 2;
+    position: relative;
+    top: -3rem;
   }
   #about .about-sec .special a {
     display: inline-block;
@@ -1557,11 +1563,16 @@ p {
   .portfolio-sec {
     padding: 2rem 4rem;
   }
+  .portfolio-sec h2 {
+    text-align: left;
+  }
   .portfolio-sec h3 {
     font-size: 1.6rem;
   }
   .portfolio-sec .container-portfolio .row-project .project-filter {
+    text-align: left;
     padding: 1.5rem 0;
+    margin-bottom: 2rem;
   }
   .portfolio-sec .container-portfolio .row-project .grid-projects {
     grid-template-columns: 1fr;
@@ -1571,13 +1582,44 @@ p {
   .review-sec {
     padding: 2rem 4rem;
   }
+  .review-sec .review-header h2 {
+    text-align: left;
+  }
   .review-sec .review-header p {
-    width: 60vw;
-    text-align: center;
-    margin-top: 0;
+    width: 78vw;
+    text-align: left;
+    margin-bottom: 0;
   }
   .review-sec .mySwiperJerry .next,
 .review-sec .mySwiperJerry .prev {
-    width: 200px;
+    display: none;
+  }
+
+  #contact {
+    padding: 2rem 4rem;
+  }
+  #contact .footer-sec {
+    grid-template-columns: 1fr;
+  }
+  #contact .footer-sec .footer-socials {
+    margin-top: 2rem;
+    justify-self: flex-start;
+  }
+  #contact .copyright .copy {
+    flex-direction: column;
+  }
+  #contact .copyright .copy .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  #contact .copyright .copy .dev a {
+    color: #e7524e;
+    border-bottom: 1px solid #e7524e;
+    transition: all 0.5s ease;
+  }
+  #contact .copyright .copy .dev a:hover {
+    opacity: 0.5;
   }
 }

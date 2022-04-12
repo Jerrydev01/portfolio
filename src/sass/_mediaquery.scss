@@ -34,6 +34,10 @@
             #about {
                 .about-sec {
                     margin: 10rem 15rem;
+                    .special{
+                        position: relative;
+                        top: -3rem;
+                    }
                 }
             }
 
@@ -247,9 +251,7 @@
 
                     .next,
                     .prev {
-                        // position: absolute;
-                        width: 450px;
-
+                       display: none;
                     }
                 }
             }
@@ -298,8 +300,8 @@
 
                         h1 {
                             font-size: 4rem;
-
-                            margin-right: 4rem;
+                            width: 75vw;
+                          
                             padding-bottom: 2rem;
 
                         }
@@ -322,13 +324,12 @@
 
                     .mobile-img {
                         display: block;
-
                         img {
-                            max-width: 25rem;
+                            max-width: 26.2rem;
                             height: 100%;
                             margin: 0 auto;
-                            position: relative;
-                            top: 2.3rem;
+                            position: static;
+                          
                             z-index: 1;
                         }
                     }
@@ -348,12 +349,14 @@
 
                     .special {
                         order: 2;
-
+                        position: relative;
+                        top: -3rem;
                         a {
                             display: inline-block;
 
                             .about-specials {
                                 width: 70vw;
+                               
                             }
 
                         }
@@ -392,14 +395,18 @@
             // project section
             .portfolio-sec {
                 padding: $margin-s;
-
+                h2 {
+                    text-align: left;
+                }
                 h3 {
                     font-size: 1.6rem
                 }
                 .container-portfolio {
                     .row-project {
                         .project-filter{
+                            text-align: left;
                             padding: 1.5rem 0;
+                            margin-bottom: 2rem;
                             
                         }
                         .grid-projects {
@@ -415,10 +422,13 @@
                 padding: $margin-s;
 
                 .review-header {
+                    h2{
+                        text-align: left;
+                    }
                     p {
-                        width: 60vw;
-                        text-align: center;
-                        margin-top: 0;
+                        width: 78vw;
+                        text-align: left;
+                        margin-bottom: 0;
 
                     }
 
@@ -428,11 +438,43 @@
 
                     .next,
                     .prev {
-                        // position: absolute;
-                        width: 200px;
+                      display: none;
+                    }
+                }
+            }
+             // footer section
+             #contact {
+                padding: $margin-s;
+               .footer-sec {
 
+                grid-template-columns: 1fr;
+                .footer-socials{
+                    margin-top: 2rem;
+                    justify-self: flex-start;
+                }
+               }
+
+               .copyright{
+                .copy{
+                    flex-direction: column;
+                    .logo{
+                        display: flex;
+                        justify-content: space-between;
+                    align-items: center;
+                    gap: 2rem;
+                    
+                       
+                    }
+                    .dev {
+                        a{
+                            @include link2;
+                            &:hover{
+                                opacity:0.5;
+                            }
+                        }
                     }
                 }
             }
 
+            }
         }
