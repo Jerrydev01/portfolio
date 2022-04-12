@@ -780,7 +780,7 @@ html {
   overflow-x: hidden;
   position: relative;
   height: 100%;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
 
