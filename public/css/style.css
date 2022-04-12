@@ -775,8 +775,8 @@ body,
 html {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
-  color: #0D2F3F;
-  background-color: white;
+  color: #8E8E97;
+  background-color: #25262A;
   overflow-x: hidden;
   position: relative;
   height: 100%;
@@ -784,15 +784,32 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #efe9e9;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
 h2 {
-  font-size: 4rem;
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+small {
+  font-size: 1.2rem;
 }
 
 a,
 ul {
   list-style: none;
   text-decoration: none;
-  color: #0D2F3F;
+  color: #efe9e9;
+  font-size: 1.6rem;
 }
 
 .logo a {
@@ -804,7 +821,7 @@ ul {
 
 @keyframes colorChange {
   0% {
-    color: #0D2F3F;
+    color: #efe9e9;
   }
   50% {
     color: #e7524e;
@@ -817,7 +834,7 @@ ul {
   }
 }
 #header {
-  background-color: #f8f7f1;
+  background-color: #2D2E32;
   background-image: url("../img/jerry4.png");
   height: 80rem;
   background-repeat: no-repeat;
@@ -825,7 +842,7 @@ ul {
   background-position: center bottom;
 }
 #header .header-sec {
-  background-color: #f8f7f1;
+  background-color: #2D2E32;
   width: 100%;
   padding: 1rem 10rem;
   display: flex;
@@ -834,7 +851,6 @@ ul {
   position: fixed;
   z-index: 1000;
   top: 0;
-  box-shadow: 0px 0px 10px 5px #dbd9d4;
 }
 #header .header-sec .navmenue {
   display: flex;
@@ -852,8 +868,8 @@ ul {
   color: #e7524e;
   border-bottom: 1px solid #e7524e;
 }
-#header .header-sec .navmenue ul .phone {
-  background-color: white;
+#header .header-sec .navmenue ul .github {
+  background-color: black;
   margin: 1rem;
   padding: 1rem;
   display: flex;
@@ -863,10 +879,10 @@ ul {
   width: 50px;
   height: 50px;
   justify-content: center;
-  box-shadow: 0px 0px 39px 11px #dbd9d4;
+  box-shadow: 0px 0px 10px 5px #8E8E97;
   transition: all 0.5s ease;
 }
-#header .header-sec .navmenue ul .phone a:hover {
+#header .header-sec .navmenue ul .github a:hover {
   border: none;
 }
 #header .header-text {
@@ -879,39 +895,33 @@ ul {
   align-items: center;
 }
 #header .header-text .header-text-flex h1 {
-  color: #0D2F3F;
+  color: #efe9e9;
   font-size: 6rem;
   max-width: 38rem;
 }
 #header .header-text .header-text-flex p {
-  max-width: 300px;
+  max-width: 30rem;
 }
 #header .header-text .cta {
-  background-color: #0D2F3F;
+  background-color: #25262A;
   padding: 1rem 1.5rem;
   width: fit-content;
   margin-top: 2rem;
-  border-radius: 0.5rem;
   transition: all 0.5s ease;
+  box-shadow: 0px 0px 10px 2px #8E8E97;
 }
 #header .header-text .cta a {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 #header .header-text .cta:hover {
   background-color: #e7524e;
-}
-#header .header-text .email {
-  margin-top: 15rem;
-}
-#header .header-text .email a {
-  color: #e7524e;
 }
 #header .header-text .mobile-img {
   display: none;
 }
 #header .header-text .exp-header {
-  margin-top: 10rem;
+  margin-top: 15rem;
   display: flex;
   justify-content: space-between;
 }
@@ -922,7 +932,7 @@ ul {
   align-items: center;
 }
 #header .header-text .exp-header .exp-years h2 {
-  color: #0D2F3F;
+  color: #efe9e9;
   font-size: 6rem;
 }
 #header .header-text .exp-header .skillsimg {
@@ -936,42 +946,11 @@ ul {
   width: 80px;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #experience {
   margin: auto;
   display: grid;
   place-items: center;
-  background-color: #f8f7f1;
+  background-color: #2D2E32;
 }
 #experience .experience-sec {
   margin: 7rem 15rem;
@@ -1035,9 +1014,9 @@ ul {
   display: inline-block;
   margin-block: 1rem;
   padding: 1.5rem;
-  background-color: #FEFEFE;
-  box-shadow: 0px 0px 9px 1px #dbd9d4;
-  border-radius: 1rem;
+  background-color: #2D2E32;
+  box-shadow: 0px 0px 9px 1px #2D2E32;
+  transition: all 0.3s ease;
 }
 #about .about-sec a .about-specials {
   display: flex;
@@ -1058,10 +1037,8 @@ ul {
   }
 }
 #about .about-sec a:hover {
-  box-shadow: 0px 0px 20px 11px #dbd9d4;
-}
-#about .about-sec .about-header h2 {
-  font-size: 4rem;
+  box-shadow: 0px 0px 20px 11px #2D2E32;
+  color: #e7524e;
 }
 #about .about-sec .about-header .total-projects {
   display: flex;
@@ -1082,6 +1059,7 @@ ul {
 }
 .portfolio-sec h2 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 .portfolio-sec .container-portfolio .row-project .project-filter {
   padding-inline: 1.5rem;
@@ -1093,8 +1071,7 @@ ul {
   color: white;
   font-size: 1.5rem;
   display: inline-block;
-  border: 1px solid #FEFEFE;
-  background-color: #0D2F3F;
+  background-color: #2D2E32;
   border-radius: 2rem;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -1107,7 +1084,7 @@ ul {
 .portfolio-sec .container-portfolio .row-project .grid-projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 3rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects img {
   width: 100%;
@@ -1139,9 +1116,8 @@ ul {
   }
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-item {
-  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-  background: linear-gradient(145deg, #f8f7f1, #ffffff);
-  border-radius: 1rem;
+  box-shadow: 0px 0px 10px 5px #2D2E32;
+  background-color: #2D2E32;
   padding: 1rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-item.show {
@@ -1161,7 +1137,7 @@ ul {
 
 .review-sec {
   padding: 7rem 15rem;
-  background-color: #f8f7f1;
+  background-color: #2D2E32;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -1174,16 +1150,17 @@ ul {
 }
 .review-sec .mySwiperJerry {
   width: 100%;
-  margin: 5rem 2rem 2rem 2rem;
+  margin: 0rem 2rem 0rem 2rem;
 }
 .review-sec .mySwiperJerry .review-container {
-  margin-top: 5rem;
+  margin-block: 7rem;
 }
 .review-sec .mySwiperJerry .review-container .slider-review {
   margin-top: 3rem;
   padding-inline: 2rem;
   border-radius: 1rem;
   max-height: 20rem;
+  background-color: #25262A;
   transition: all 0.5s ease;
 }
 .review-sec .mySwiperJerry .review-container .slider-review img {
@@ -1209,7 +1186,7 @@ ul {
 .review-sec .mySwiperJerry .review-container .swiper-text hr {
   margin-block: 1.5rem;
   border-bottom: 0;
-  border-color: rgba(89, 86, 86, 0.078);
+  border-color: rgba(142, 141, 141, 0.249);
 }
 .review-sec .mySwiperJerry .review-container .swiper-text small {
   font-size: 1rem;
@@ -1222,19 +1199,19 @@ ul {
 }
 .review-sec .mySwiperJerry .next i,
 .review-sec .mySwiperJerry .prev i {
-  background-color: white;
-  color: #0D2F3F;
+  background-color: #25262A;
+  color: #efe9e9;
   padding: 1rem;
   border-radius: 50%;
   width: 5rem;
   display: grid;
   place-items: center;
   height: 5rem;
-  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  box-shadow: 0px 0px 10px 5px #2D2E32;
 }
 .review-sec .mySwiperJerry .next i:hover,
 .review-sec .mySwiperJerry .prev i:hover {
-  background-color: #0D2F3F;
+  background-color: #e7524e;
   color: white;
 }
 
@@ -1310,9 +1287,10 @@ ul {
   opacity: 0.5;
 }
 
-@media screen and (min-width: 1050px) {
-  body {
-    font-size: 1.8rem;
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  body,
+p {
+    font-size: 1.6rem;
   }
 
   h1 {
@@ -1320,14 +1298,49 @@ ul {
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
+  }
+
+  h3 {
+    font-size: 1.9rem;
   }
 
   a {
     font-size: 1.6rem;
   }
+
+  #header {
+    background-size: 42%;
+  }
+
+  #about .about-sec {
+    margin: 10rem 15rem;
+  }
+
+  #experience .experience-sec {
+    margin: 7rem 10rem;
+  }
+  #experience .experience-sec .experence-list .esp2 img {
+    height: 40rem;
+  }
+
+  .review-sec {
+    padding: 7rem 10rem;
+  }
+  .review-sec .mySwiperJerry .next,
+.review-sec .mySwiperJerry .prev {
+    width: 860px;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 1110px) and (max-width: 1200px) {
+  #experience .experience-sec {
+    margin: 7rem 10rem;
+  }
+  #experience .experience-sec .experence-list .esp2 img {
+    height: 35rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   body {
     font-size: 1.6rem;
   }
@@ -1344,45 +1357,105 @@ ul {
     font-size: 1.5rem;
   }
 
-  header .header-flex .img-header img {
-    max-width: 35vw;
+  #header {
+    background-image: none;
   }
-}
-@media screen and (max-width: 768px) {
-  body {
+  #header .header-text {
+    margin: 2rem 7rem;
+  }
+  #header .header-text .header-text-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #header .header-text .header-text-flex h1 {
+    font-size: 5rem;
+    width: 75vw;
+    max-width: 75rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  #header .header-text .header-text-flex p {
+    max-width: 55rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #header .header-text .cta {
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+  }
+  #header .header-text .mobile-img {
+    display: block;
+  }
+  #header .header-text .mobile-img img {
+    max-width: 31rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 1rem;
+    z-index: 1;
+  }
+  #header .header-text .exp-header {
+    position: relative;
+    bottom: 35rem;
+    z-index: 3;
+  }
+  #header .header-text .exp-header .skillsimg img {
+    width: 6rem;
+  }
+
+  #about .about-sec {
+    margin: 10rem 10rem;
+    flex-direction: column;
+  }
+  #about .about-sec .special {
+    order: 2;
+  }
+  #about .about-sec .special a {
+    display: inline-block;
+  }
+  #about .about-sec .special a .about-specials {
+    width: 70vw;
+    gap: 3rem;
+  }
+
+  #experience .experience-sec {
+    margin: 7rem 10rem;
+  }
+  #experience .experience-sec h2 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  #experience .experience-sec .experence-list {
+    grid-template-columns: 1fr;
+  }
+  #experience .experience-sec .experence-list .esp1 {
+    display: none;
+  }
+  #experience .experience-sec .experence-list .esp2 img {
+    height: 45rem;
+  }
+
+  .portfolio-sec {
+    padding: 7rem 10rem;
+  }
+  .portfolio-sec h3 {
     font-size: 1.6rem;
   }
 
-  h1 {
-    font-size: 3.4rem;
+  .review-sec {
+    padding: 7rem 10rem;
+  }
+  .review-sec .review-header p {
+    width: 60vw;
+    margin: 2rem auto;
+  }
+  .review-sec .mySwiperJerry .next,
+.review-sec .mySwiperJerry .prev {
+    width: 450px;
   }
 
-  h2 {
-    font-size: 2.8rem;
-  }
-
-  a {
-    font-size: 1.4rem;
-  }
-
-  header {
-    padding: 2rem 4rem;
-    height: 100%;
-  }
-  header .header-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-  header .header-flex .header-parag-sec {
-    max-width: 90%;
-  }
-  header .header-flex .img-header img {
-    position: relative;
-    top: 6rem;
-    max-width: 90vw;
-    min-height: 100%;
-  }
-  header .social a {
-    display: none;
+  #contact {
+    padding: 7rem 10rem;
   }
 }

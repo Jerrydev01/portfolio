@@ -4,24 +4,24 @@ $heading2: 3.2rem;
 $paragraph: 1.8rem;
 $link: 1.6rem;
 // colors
-$header-text:#0D2F3F;
-$clr-paragraph:#0D2F3F;
+$header-text:#efe9e9;
+$clr-paragraph:#8E8E97;
 $clr-paragraph2: rgb(231, 82, 78);
-$bg-sec-color: #f8f7f1;
-$bg-sec-color2: #FEFEFE;
-$bg-body: rgb(24, 23, 23);
+$bg-sec-color: #2D2E32;
+$bg-body: #25262A;
 $white : white;// =============================================s========================
 // section margin by screen
 // desktop
 $margin-l: 5rem 10rem;
 $margin-h: 1rem 10rem;
 $margin-sec: 7rem 15rem;
+$margin-sec-landscape: 7rem 10rem;
 $margin-m: 2rem 7rem;
 $margin-s: 2rem 4rem;
 
 // ?mixins
 @mixin box-l() {
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    box-shadow: 0px 0px 10px 5px $bg-sec-color;
 }
 
 @mixin link2 {

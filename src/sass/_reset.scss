@@ -99,22 +99,33 @@ html {
   // font-family: 'Sacramento', cursive;
   font-size: 10px;
   color: $clr-paragraph;
-  background-color: $white;
+  background-color: $bg-body;
   overflow-x: hidden;
   position: relative;
   height: 100%;
   scroll-padding-top: 2rem;
   scroll-behavior: smooth;
 }
-
-
+h1,h2,h3,h4,h5,h6 {
+  color: $header-text;
+}
+p{
+  font-size: 1.8rem
+}
 h2{
-  font-size: 4rem;
+  font-size: 3.8rem;
+}
+h3{
+  font-size: 2.1rem
+}
+small{
+  font-size: 1.2rem;
 }
 a,
 ul {
   list-style: none;
   text-decoration: none;
-  color: $clr-paragraph;
+  color: $header-text;
+  font-size: 1.6rem;
 }
 

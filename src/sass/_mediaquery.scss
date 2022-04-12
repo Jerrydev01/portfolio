@@ -1,75 +1,302 @@
-        @use '../sass/_color-text-mixins.scss' as *;
-        // desktop screen
-        @media screen and (min-width: 1050px) {
-            body {
-                font-size: $paragraph;
+        @use '../sass/_color-text-mixins.scss'as *;
+
+        // landscape
+        @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+            body,
+            p {
+                font-size: 1.6rem;
             }
+
             h1 {
                 font-size: $heading1;
             }
+
             h2 {
-                font-size: $heading2;
+                font-size: 3.8rem;
             }
+
+            h3 {
+                font-size: 1.9rem
+            }
+
             a {
                 font-size: $link;
             }
+
+
+            // header section
+            #header {
+                background-size: 42%;
+            }
+
+            // about section
+            #about {
+                .about-sec {
+                    margin: 10rem 15rem;
+                }
+            }
+
+            // experience section
+            #experience {
+                .experience-sec {
+                    margin: $margin-sec-landscape;
+
+                    .experence-list {
+                        .esp2 {
+                            img {
+                                height: 40rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // review
+            .review-sec {
+                padding: $margin-sec-landscape;
+
+                .mySwiperJerry {
+
+                    .next,
+                    .prev {
+                        // position: absolute;
+                        width: 860px;
+                    }
+                }
+            }
+
+
         }
-        
+
+
+        @media only screen and (min-width: 1110px) and (max-width: 1200px) {
+
+            // experience section
+            #experience {
+                .experience-sec {
+                    margin: $margin-sec-landscape;
+
+                    .experence-list {
+                        .esp2 {
+                            img {
+                                height: 35rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         // tablet screen
-        @media screen and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1000px) {
             body {
                 font-size: 1.6rem;
             }
+
             h1 {
                 font-size: 3.6rem;
             }
+
             h2 {
                 font-size: 3rem;
             }
+
             a {
                 font-size: 1.5rem;
             }
-            header {
-                .header-flex {
-                    .img-header img {
-                        max-width: 35vw;
+
+            // header section
+            #header {
+                background-image: none;
+
+                .header-text {
+                    margin: $margin-m;
+
+                    .header-text-flex {
+                        display: flex;
+                        flex-direction: column;
+
+                        h1 {
+                            font-size: 5rem;
+                            width: 75vw;
+                            max-width: 75rem;
+                            padding-bottom: 2rem;
+                            text-align: center;
+                        }
+
+                        p {
+                            max-width: 55rem;
+                            text-align: center;
+                            margin-bottom: 2rem;
+                        }
                     }
-                }
-            }
-        }
-        
-        // mobile screen
-        @media screen and (max-width: 768px) {
-            body {
-                font-size: 1.6rem;
-            }
-            h1 {
-                font-size: 3.4rem;
-            }
-            h2 {
-                font-size: 2.8rem;
-            }
-            a {
-                font-size: 1.4rem;
-            }
-            header {
-                padding: $margin-s;
-                height: 100%;
-                .header-flex {
-                    flex-direction: column;
-                    text-align: center;
-                    .header-parag-sec {
-                        max-width: 90%;
-                    }
-                    .img-header img {
+
+                    .cta {
+                        margin: 0 auto;
+                        z-index: 2;
                         position: relative;
-                        top: 6rem;
-                        max-width: 90vw;
-                        min-height: 100%;
+                    }
+
+                    .mobile-img {
+                        display: block;
+
+                        img {
+                            max-width: 31rem;
+                            height: 100%;
+                            margin: 0 auto;
+                            position: relative;
+                            top: 1rem;
+                            z-index: 1;
+                        }
+                    }
+
+                    .exp-header {
+                        position: relative;
+                        bottom: 35rem;
+                        z-index: 3;
+
+                        .skillsimg {
+                            img {
+                                width: 6rem;
+                            }
+                        }
                     }
                 }
-                .social a {
-                    display: none;
+
+            }
+
+            // about section
+            #about {
+                .about-sec {
+                    margin: 10rem 10rem;
+                    flex-direction: column;
+
+                    .special {
+                        order: 2;
+
+                        a {
+
+                            display: inline-block;
+
+                            .about-specials {
+                                width: 70vw;
+                                gap: 3rem;
+                            }
+
+                        }
+                    }
+
                 }
             }
+
+            // Experience section
+            #experience {
+                .experience-sec {
+                    margin: $margin-sec-landscape;
+
+                    h2 {
+                        text-align: left;
+                        margin-left: 1rem;
+                    }
+
+                    .experence-list {
+                        grid-template-columns: 1fr;
+
+                        .esp1 {
+                            display: none;
+                        }
+
+                        .esp2 {
+                            img {
+                                height: 45rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // project section
+            .portfolio-sec {
+                padding: $margin-sec-landscape;
+
+                h2 {}
+
+                h3 {
+                    font-size: 1.6rem
+                }
+            }
+
+            // review section
+            .review-sec {
+                padding: $margin-sec-landscape;
+
+                .review-header {
+                    p {
+                        width: 60vw;
+                        margin: 2rem auto;
+                    }
+
+                }
+
+                .mySwiperJerry {
+
+                    .next,
+                    .prev {
+                        // position: absolute;
+                        width: 450px;
+
+                    }
+                }
+            }
+
+            // footer section
+            #contact{
+                padding: $margin-sec-landscape;
+               
+            }
         }
+
+        // mobile screen
+        // @media screen and (max-width: 768px) {
+        //     body {
+        //         font-size: 1.6rem;
+        //     }
+
+        //     h1 {
+        //         font-size: 3.4rem;
+        //     }
+
+        //     h2 {
+        //         font-size: 2.8rem;
+        //     }
+
+        //     a {
+        //         font-size: 1.4rem;
+        //     }
+
+        //     header {
+        //         padding: $margin-s;
+        //         height: 100%;
+
+        //         .header-flex {
+        //             flex-direction: column;
+        //             text-align: center;
+
+        //             .header-parag-sec {
+        //                 max-width: 90%;
+        //             }
+
+        //             .img-header img {
+        //                 position: relative;
+        //                 top: 6rem;
+        //                 max-width: 90vw;
+        //                 min-height: 100%;
+        //             }
+        //         }
+
+        //         .social a {
+        //             display: none;
+        //         }
+        //     }
+        // }
