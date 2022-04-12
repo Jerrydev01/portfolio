@@ -1567,4 +1567,17 @@ p {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
   }
+
+  .review-sec {
+    padding: 2rem 4rem;
+  }
+  .review-sec .review-header p {
+    width: 60vw;
+    text-align: center;
+    margin-top: 0;
+  }
+  .review-sec .mySwiperJerry .next,
+.review-sec .mySwiperJerry .prev {
+    width: 200px;
+  }
 }
