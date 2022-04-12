@@ -1053,9 +1053,6 @@ ul {
 
 .portfolio-sec {
   padding: 7rem 15rem;
-  display: block;
-  display: grid;
-  place-items: center;
 }
 .portfolio-sec h2 {
   text-align: center;
@@ -1071,6 +1068,7 @@ ul {
   color: white;
   font-size: 1.5rem;
   display: inline-block;
+  margin-bottom: 1rem;
   background-color: #2D2E32;
   border-radius: 2rem;
   cursor: pointer;
@@ -1340,6 +1338,7 @@ p {
     height: 35rem;
   }
 }
+/*================= tablet screen================*/
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   body {
     font-size: 1.6rem;
@@ -1374,8 +1373,11 @@ p {
     padding-bottom: 2rem;
     text-align: center;
   }
+  #header .header-text .header-text-flex h1 br {
+    display: none;
+  }
   #header .header-text .header-text-flex p {
-    max-width: 55rem;
+    max-width: 50rem;
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -1457,5 +1459,112 @@ p {
 
   #contact {
     padding: 7rem 10rem;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  body,
+p {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+
+  #header {
+    background-image: none;
+  }
+  #header .header-text {
+    margin: 2rem 4rem;
+  }
+  #header .header-text .header-text-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #header .header-text .header-text-flex h1 {
+    font-size: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 2rem;
+  }
+  #header .header-text .header-text-flex p {
+    max-width: 75vw;
+    margin-bottom: 2rem;
+  }
+  #header .header-text .cta {
+    z-index: 2;
+    position: relative;
+    top: -2rem;
+    margin-left: 1rem;
+  }
+  #header .header-text .mobile-img {
+    display: block;
+  }
+  #header .header-text .mobile-img img {
+    max-width: 25rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 2.3rem;
+    z-index: 1;
+  }
+  #header .header-text .exp-header {
+    display: none;
+  }
+
+  #about .about-sec {
+    margin: 3rem 5rem;
+    flex-direction: column;
+  }
+  #about .about-sec .special {
+    order: 2;
+  }
+  #about .about-sec .special a {
+    display: inline-block;
+  }
+  #about .about-sec .special a .about-specials {
+    width: 70vw;
+  }
+
+  #experience .experience-sec {
+    margin: 2rem 4rem;
+  }
+  #experience .experience-sec h2 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  #experience .experience-sec .experence-list {
+    grid-template-columns: 1fr;
+  }
+  #experience .experience-sec .experence-list .esp1 {
+    display: none;
+  }
+  #experience .experience-sec .experence-list .esp2 img {
+    height: 50rem;
+  }
+
+  .portfolio-sec {
+    padding: 2rem 4rem;
+  }
+  .portfolio-sec h3 {
+    font-size: 1.6rem;
+  }
+  .portfolio-sec .container-portfolio .row-project .project-filter {
+    padding: 1.5rem 0;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
   }
 }

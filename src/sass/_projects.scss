@@ -2,9 +2,7 @@
 
 .portfolio-sec {
     padding: $margin-sec;
-    display: block;
-    display: grid;
-    place-items: center;
+
 
     h2 {
         text-align: center;
@@ -23,7 +21,7 @@
                     color: $white;
                     font-size: 1.5rem;
                     display: inline-block;
-                 
+                    margin-bottom: 1rem;
                     background-color: $bg-sec-color;
                     border-radius: 2rem;
                     cursor: pointer;
