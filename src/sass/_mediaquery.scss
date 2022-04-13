@@ -167,21 +167,29 @@
             h2 {
                 font-size: 3rem;
             }
+            h5{
+                font-size: 2.5rem;
+            }
 
             a {
                 font-size: 1.5rem;
             }
-
+            .navmenue-ul {
+                top: 6rem;
+            }
             // header section
             #header {
                 background-image: none;
-
+               
                 .header-text {
                     margin: $margin-m;
 
                     .header-text-flex {
                         display: flex;
                         flex-direction: column;
+                        h5{
+                            margin: 0 auto;
+                        }
 
                         h1 {
                             font-size: 5rem;
@@ -212,7 +220,7 @@
                         display: block;
 
                         img {
-                            max-width: 31rem;
+                            max-width: 28.5rem;
                             height: 100%;
                             margin: 0 auto;
                             position: relative;
@@ -367,11 +375,12 @@
                     .header-text-flex {
                         display: flex;
                         flex-direction: column;
-
+                        text-align: left;
+                        align-items: flex-start;
                         h1 {
                             font-size: 4rem;
                             width: 75vw;
-                          
+                           
                             padding-bottom: 2rem;
 
                         }
@@ -388,7 +397,7 @@
                         z-index: 2;
                         position: relative;
                         top: -2rem;
-                        margin-left: 1rem;
+                       
 
                     }
 

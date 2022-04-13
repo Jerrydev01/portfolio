@@ -1,3 +1,25 @@
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+    console.log('scrollY');
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav_scroll a[href*=' + sectionId + ']').classList.add('active-link');
+        }else{
+            document.querySelector('.nav_scroll a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+    });
+}
+window.addEventListener('scroll', scrollActive);
+
+
 // menue bar for mobile devices
 const menu = document.querySelector(".menu");
 console.log(menu);
@@ -5,14 +27,14 @@ const navMenueUl = document.querySelector(".navmenue-ul");
 console.log(navMenueUl);
 
 menu.addEventListener("click", () =>{
-  menu.classList.toggle("active")
-  navMenueUl.classList.toggle("show")
+  menu.classList.toggle("active");
+  navMenueUl.classList.toggle("show");
 });
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
   menu.classList.remove("active");
   navMenueUl.classList.remove("show");
-}))
+}));
 
 
 
@@ -67,6 +89,9 @@ function closeFullImg() {
   fullImgBox.style.display = 'none';
   
 }
+
+
+
 
 // swiper review section slider
 var swiper = new Swiper(".mySwiperJerry", {

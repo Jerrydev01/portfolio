@@ -100,9 +100,8 @@ html {
   font-size: 10px;
   color: $clr-paragraph;
   background-color: $bg-body;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   position: relative;
-  height: 100%;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }

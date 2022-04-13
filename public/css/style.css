@@ -777,9 +777,7 @@ html {
   font-size: 10px;
   color: #8E8E97;
   background-color: #25262A;
-  overflow-x: hidden;
   position: relative;
-  height: 100%;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
@@ -840,11 +838,6 @@ ul {
     color: #4353FF;
   }
 }
-.active-l {
-  color: lime;
-  font-weight: 600;
-}
-
 #header {
   background-color: #2D2E32;
   background-image: url("../img/jerry4.png");
@@ -918,6 +911,7 @@ ul {
   background-color: #25262A;
   padding: 1rem 1.5rem;
   width: fit-content;
+  width: -moz-fit-content;
   margin-top: 2rem;
   transition: all 0.5s ease;
   box-shadow: 0px 0px 10px 2px #8E8E97;
@@ -983,6 +977,11 @@ ul {
 .menu span:nth-child(3) {
   width: 20px;
   margin-left: 20px;
+}
+
+/* Active link */
+.active-link {
+  color: #e7524e;
 }
 
 #experience {
@@ -1265,6 +1264,7 @@ ul {
   padding: 7rem 15rem;
 }
 #contact .footer-sec {
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -1465,8 +1465,16 @@ p {
     font-size: 3rem;
   }
 
+  h5 {
+    font-size: 2.5rem;
+  }
+
   a {
     font-size: 1.5rem;
+  }
+
+  .navmenue-ul {
+    top: 6rem;
   }
 
   #header {
@@ -1478,6 +1486,9 @@ p {
   #header .header-text .header-text-flex {
     display: flex;
     flex-direction: column;
+  }
+  #header .header-text .header-text-flex h5 {
+    margin: 0 auto;
   }
   #header .header-text .header-text-flex h1 {
     font-size: 5rem;
@@ -1503,7 +1514,7 @@ p {
     display: block;
   }
   #header .header-text .mobile-img img {
-    max-width: 31rem;
+    max-width: 28.5rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -1615,6 +1626,8 @@ p {
   #header .header-text .header-text-flex {
     display: flex;
     flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
   }
   #header .header-text .header-text-flex h1 {
     font-size: 4rem;
@@ -1629,7 +1642,6 @@ p {
     z-index: 2;
     position: relative;
     top: -2rem;
-    margin-left: 1rem;
   }
   #header .header-text .mobile-img {
     display: block;
