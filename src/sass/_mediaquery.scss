@@ -84,7 +84,7 @@
             #header {
                 background-size: 42%;
                 .header-sec{
-                    padding: $margin-sec-landscape;
+                    padding: 2rem 10rem;
                 }
             }
 
@@ -93,6 +93,10 @@
                 .about-sec {
                     margin: 10rem 15rem;
                     .special{
+                        position: relative;
+                        top: -3rem;
+                    }
+                    .about-header{
                         position: relative;
                         top: -3rem;
                     }
@@ -265,6 +269,9 @@
                         text-align: left;
                         margin-left: 1rem;
                     }
+                    h5{
+                        margin: 0 0 0 1rem;
+                    }
 
                     .experence-list {
                         grid-template-columns: 1fr;
@@ -340,6 +347,9 @@
             h3 {
                 font-size: 1.8rem
             }
+            h5{
+                font-size: 2rem;
+            }
 
             a {
                 font-size: 1.4rem;
@@ -385,7 +395,7 @@
                     .mobile-img {
                         display: block;
                         img {
-                            max-width: 26.2rem;
+                            max-width: 24rem;
                             height: 100%;
                             margin: 0 auto;
                             position: static;
@@ -429,7 +439,9 @@
             #experience {
                 .experience-sec {
                     margin: $margin-s;
-
+                    h5{
+                        margin: 0 0 0 1rem;
+                    }
                     h2 {
                         text-align: left;
                         margin-left: 1rem;
@@ -458,6 +470,9 @@
                 h2 {
                     text-align: left;
                 }
+                h5{
+                    margin: 0;
+                }
                 h3 {
                     font-size: 1.6rem
                 }
@@ -484,6 +499,9 @@
                 .review-header {
                     h2{
                         text-align: left;
+                    }
+                    h5{
+                        margin: 0;
                     }
                     p {
                         width: 78vw;

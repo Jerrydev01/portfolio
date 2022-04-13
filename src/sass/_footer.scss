@@ -8,9 +8,12 @@
         align-items: center;
         justify-content: space-between;
         .footer-one{
+            h5{
+                margin-top: 5rem;
+            }
             h3, a{
                 font-size: 2.5rem;
-                margin-top: 5rem;
+                
             }
             a{
                 @include link2;

@@ -800,6 +800,13 @@ h3 {
   font-size: 2.1rem;
 }
 
+h5 {
+  font-size: 3rem;
+  font-family: "Sacramento", cursive;
+  color: #e7524e;
+  width: fit-content;
+}
+
 small {
   font-size: 1.2rem;
 }
@@ -987,6 +994,9 @@ ul {
 #experience .experience-sec {
   margin: 7rem 15rem;
 }
+#experience .experience-sec h5 {
+  margin: 0 auto;
+}
 #experience .experience-sec h2 {
   text-align: center;
   margin-bottom: 3rem;
@@ -1086,6 +1096,9 @@ ul {
 .portfolio-sec {
   padding: 7rem 15rem;
 }
+.portfolio-sec h5 {
+  margin: 0 auto;
+}
 .portfolio-sec h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -1174,6 +1187,9 @@ ul {
   display: grid;
   place-items: center;
 }
+.review-sec .review-header h5 {
+  margin: 0 auto;
+}
 .review-sec .review-header p {
   width: 40vw;
   margin: 2rem auto;
@@ -1254,9 +1270,11 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+#contact .footer-sec .footer-one h5 {
+  margin-top: 5rem;
+}
 #contact .footer-sec .footer-one h3, #contact .footer-sec .footer-one a {
   font-size: 2.5rem;
-  margin-top: 5rem;
 }
 #contact .footer-sec .footer-one a {
   color: #e7524e;
@@ -1395,13 +1413,17 @@ p {
     background-size: 42%;
   }
   #header .header-sec {
-    padding: 7rem 10rem;
+    padding: 2rem 10rem;
   }
 
   #about .about-sec {
     margin: 10rem 15rem;
   }
   #about .about-sec .special {
+    position: relative;
+    top: -3rem;
+  }
+  #about .about-sec .about-header {
     position: relative;
     top: -3rem;
   }
@@ -1519,6 +1541,9 @@ p {
     text-align: left;
     margin-left: 1rem;
   }
+  #experience .experience-sec h5 {
+    margin: 0 0 0 1rem;
+  }
   #experience .experience-sec .experence-list {
     grid-template-columns: 1fr;
   }
@@ -1570,6 +1595,10 @@ p {
     font-size: 1.8rem;
   }
 
+  h5 {
+    font-size: 2rem;
+  }
+
   a {
     font-size: 1.4rem;
   }
@@ -1606,7 +1635,7 @@ p {
     display: block;
   }
   #header .header-text .mobile-img img {
-    max-width: 26.2rem;
+    max-width: 24rem;
     height: 100%;
     margin: 0 auto;
     position: static;
@@ -1635,6 +1664,9 @@ p {
   #experience .experience-sec {
     margin: 2rem 4rem;
   }
+  #experience .experience-sec h5 {
+    margin: 0 0 0 1rem;
+  }
   #experience .experience-sec h2 {
     text-align: left;
     margin-left: 1rem;
@@ -1655,6 +1687,9 @@ p {
   .portfolio-sec h2 {
     text-align: left;
   }
+  .portfolio-sec h5 {
+    margin: 0;
+  }
   .portfolio-sec h3 {
     font-size: 1.6rem;
   }
@@ -1673,6 +1708,9 @@ p {
   }
   .review-sec .review-header h2 {
     text-align: left;
+  }
+  .review-sec .review-header h5 {
+    margin: 0;
   }
   .review-sec .review-header p {
     width: 78vw;
