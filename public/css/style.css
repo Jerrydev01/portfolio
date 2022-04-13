@@ -1347,7 +1347,7 @@ ul {
     top: 7rem;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(46, 47, 51, 0.571);
+    background-color: rgba(46, 47, 51, 0.891);
     text-align: center;
     transition: 0.3s ease-out;
     width: 100%;
