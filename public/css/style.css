@@ -1366,6 +1366,7 @@ ul {
 
   .menu {
     display: flex;
+    z-index: 1000;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
