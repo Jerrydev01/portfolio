@@ -1,15 +1,20 @@
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
+// menue bar for mobile devices
+const menu = document.querySelector(".menu");
+console.log(menu);
+const navMenueUl = document.querySelector(".navmenue-ul");
+console.log(navMenueUl);
+
+menu.addEventListener("click", () =>{
+  menu.classList.toggle("active")
+  navMenueUl.classList.toggle("show")
+});
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
+  menu.classList.remove("active");
+  navMenueUl.classList.remove("show");
+}))
+
+
 
 
 // filterable image gallery
