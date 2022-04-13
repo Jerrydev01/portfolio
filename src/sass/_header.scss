@@ -1,26 +1,34 @@
 @use '../sass/_color-text-mixins.scss'as *;
+
 .logo a {
     font-family: 'Sacramento', cursive;
     font-size: 3rem;
     font-weight: bold;
     animation: colorChange ease-in-out 5s 1s infinite alternate;
 }
+
 @keyframes colorChange {
-    0% {  
+    0% {
         color: $header-text;
-        
-}
+
+    }
+
     50% {
         color: $clr-paragraph2;
     }
+
     75% {
         color: #FF6600;
     }
 
     100% {
-        color:#4353FF;
+        color: #4353FF;
     }
 }
+.active-l {
+    color: lime; 
+    font-weight: 600;
+  }
 
 #header {
     background-color: $bg-sec-color;
@@ -40,13 +48,13 @@
         position: fixed;
         z-index: 1000;
         top: 0;
-        
 
-      
+
+
 
         .navmenue {
             display: flex;
-            
+
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -56,7 +64,7 @@
                 a {
                     transition: all 0.5s ease;
 
-                    &:hover {
+                    &:hover, &:focus {
                         color: $clr-paragraph2;
                         border-bottom: 1px solid $clr-paragraph2;
 
@@ -76,7 +84,8 @@
                     justify-content: center;
                     box-shadow: 0px 0px 10px 5px $clr-paragraph;
                     transition: all 0.5s ease;
-                    a:hover{
+
+                    a:hover {
                         border: none;
                     }
                 }
@@ -103,19 +112,21 @@
                 max-width: 30rem;
             }
         }
-        .cta{
+
+        .cta {
             background-color: $bg-body;
             padding: 1rem 1.5rem;
             width: fit-content;
             margin-top: 2rem;
             transition: all 0.5s ease;
             box-shadow: 0px 0px 10px 2px $clr-paragraph;
-              
-            a{
+
+            a {
                 color: $white;
                 font-size: 2rem;
-              
+
             }
+
             &:hover {
                 background-color: $clr-paragraph2;
             }
@@ -142,17 +153,48 @@
                     font-size: 6rem;
                 }
             }
-          .skillsimg {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            position: relative;
-            top: -3rem;
-            gap: 1rem;
-             img{
-                width: 80px;
-                
-          }
-        }
+
+            .skillsimg {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                position: relative;
+                top: -3rem;
+                gap: 1rem;
+
+                img {
+                    width: 80px;
+
+                }
+            }
         }
     }
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    span {
+        display: inline-block;
+        height: 4px;
+        width: 30px;
+        margin-block: 3px;
+        background-color: $header-text;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    span:nth-child(1){
+        width: 40px;
+    }
+    span:nth-child(2){
+        margin-left: 10px;
+    }
+    span:nth-child(3){
+        width: 20px;
+        margin-left: 20px;
+    }
+}
+
