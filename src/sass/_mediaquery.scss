@@ -358,7 +358,8 @@
             h5{
                 font-size: 2rem;
                 margin-top: 2rem;
-                padding-inline:0 1rem ;
+                
+                width: 100%;
             }
 
             a {
@@ -410,11 +411,11 @@
                     .mobile-img {
                         display: block;
                         img {
-                            max-width: 27rem;
+                            max-width: 25rem;
                             height: 100%;
                             margin: 0 auto;
                             position: relative;
-                            top: -2.2rem;
+                            transform: translateY(-13px);
                           
                             z-index: 1;
                         }
@@ -456,7 +457,8 @@
                 .experience-sec {
                     margin: $margin-s;
                     h5{
-                        margin: 0 0 0 1rem;
+                        margin: 2rem 0 0 1rem;
+                        text-align: left;
                     }
                     h2 {
                         text-align: left;
@@ -487,7 +489,8 @@
                     text-align: left;
                 }
                 h5{
-                    margin: 0;
+                    margin: 2rem 0 0 0;
+                    text-align: left;
                 }
                 h3 {
                     font-size: 1.6rem
@@ -517,7 +520,8 @@
                         text-align: left;
                     }
                     h5{
-                        margin: 0;
+                        margin: 2rem 0 0 0;
+                        text-align: left;
                     }
                     p {
                         width: 78vw;

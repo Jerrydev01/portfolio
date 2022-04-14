@@ -983,6 +983,7 @@ ul {
   width: 30px;
   margin-block: 3px;
   background-color: #efe9e9;
+  background-image: url("../img/span-bg.svg");
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -1627,7 +1628,7 @@ p {
   h5 {
     font-size: 2rem;
     margin-top: 2rem;
-    padding-inline: 0 1rem;
+    width: 100%;
   }
 
   a {
@@ -1672,11 +1673,11 @@ p {
     display: block;
   }
   #header .header-text .mobile-img img {
-    max-width: 27rem;
+    max-width: 25rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
-    top: -2.2rem;
+    transform: translateY(-13px);
     z-index: 1;
   }
   #header .header-text .exp-header {
@@ -1703,7 +1704,8 @@ p {
     margin: 2rem 4rem;
   }
   #experience .experience-sec h5 {
-    margin: 0 0 0 1rem;
+    margin: 2rem 0 0 1rem;
+    text-align: left;
   }
   #experience .experience-sec h2 {
     text-align: left;
@@ -1726,7 +1728,8 @@ p {
     text-align: left;
   }
   .portfolio-sec h5 {
-    margin: 0;
+    margin: 2rem 0 0 0;
+    text-align: left;
   }
   .portfolio-sec h3 {
     font-size: 1.6rem;
@@ -1748,7 +1751,8 @@ p {
     text-align: left;
   }
   .review-sec .review-header h5 {
-    margin: 0;
+    margin: 2rem 0 0 0;
+    text-align: left;
   }
   .review-sec .review-header p {
     width: 78vw;
