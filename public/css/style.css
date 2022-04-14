@@ -1131,7 +1131,7 @@ ul {
   font-size: 1.5rem;
   display: inline-block;
   margin-bottom: 1rem;
-  background-color: #2D2E32;
+  background-color: #25262A;
   border-radius: 2rem;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -1177,7 +1177,7 @@ ul {
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-item {
   box-shadow: 0px 0px 10px 5px #2D2E32;
-  background-color: #2D2E32;
+  background-color: #25262A;
   padding: 1rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-item.show {
@@ -1617,7 +1617,7 @@ p {
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 
   h3 {
@@ -1626,6 +1626,7 @@ p {
 
   h5 {
     font-size: 2rem;
+    margin-top: 2rem;
   }
 
   a {
