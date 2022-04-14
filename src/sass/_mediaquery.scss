@@ -397,17 +397,22 @@
                         z-index: 2;
                         position: relative;
                         top: -2rem;
-                       
+                        transform: translateY(600%);
+                        margin : 0 auto;
+                        backdrop-filter: blur(16px) saturate(180%);
+                        -webkit-backdrop-filter: blur(16px) saturate(180%);
+                        background-color: rgba(17, 25, 40, 0.926);
 
                     }
 
                     .mobile-img {
                         display: block;
                         img {
-                            max-width: 24rem;
+                            max-width: 27rem;
                             height: 100%;
                             margin: 0 auto;
-                            position: static;
+                            position: relative;
+                            top: -2.2rem;
                           
                             z-index: 1;
                         }

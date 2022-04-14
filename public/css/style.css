@@ -773,7 +773,7 @@ h6 {
 
 body,
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: "MyFont2", sans-serif;
   font-size: 10px;
   color: #8E8E97;
   background-color: #25262A;
@@ -782,8 +782,26 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: "MyFont";
+  src: url("../font/BOGARTMEDIUMTRIAL.TTF");
+}
+@font-face {
+  font-family: "MyFont2";
+  src: url("../font/Biotif-Regular.ttf");
+}
+@font-face {
+  font-family: "MyFont3";
+  src: url("../font/Biotif-LightItalic.ttf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #efe9e9;
+  font-family: "MyFont", sans-serif;
 }
 
 p {
@@ -799,8 +817,8 @@ h3 {
 }
 
 h5 {
-  font-size: 3rem;
-  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  font-family: "Myfont3", cursive;
   color: #e7524e;
   width: fit-content;
 }
@@ -818,7 +836,7 @@ ul {
 }
 
 .logo a {
-  font-family: "Sacramento", cursive;
+  font-family: "Myfont3", cursive;
   font-size: 3rem;
   font-weight: bold;
   animation: colorChange ease-in-out 5s 1s infinite alternate;
@@ -988,7 +1006,6 @@ ul {
   margin: auto;
   display: grid;
   place-items: center;
-  background-color: #2D2E32;
 }
 #experience .experience-sec {
   margin: 7rem 15rem;
@@ -1094,6 +1111,7 @@ ul {
 
 .portfolio-sec {
   padding: 7rem 15rem;
+  background-color: #2D2E32;
 }
 .portfolio-sec h5 {
   margin: 0 auto;
@@ -1642,15 +1660,21 @@ p {
     z-index: 2;
     position: relative;
     top: -2rem;
+    transform: translateY(600%);
+    margin: 0 auto;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.926);
   }
   #header .header-text .mobile-img {
     display: block;
   }
   #header .header-text .mobile-img img {
-    max-width: 24rem;
+    max-width: 27rem;
     height: 100%;
     margin: 0 auto;
-    position: static;
+    position: relative;
+    top: -2.2rem;
     z-index: 1;
   }
   #header .header-text .exp-header {

@@ -95,7 +95,7 @@ h6 {
 // =========================general styles start====================/
 body,
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'MyFont2', sans-serif;
   // font-family: 'Sacramento', cursive;
   font-size: 10px;
   color: $clr-paragraph;
@@ -105,29 +105,55 @@ html {
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6 {
-  color: $header-text;
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/BOGARTMEDIUMTRIAL.TTF');
 }
-p{
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('../font/Biotif-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MyFont3';
+  src: url('../font/Biotif-LightItalic.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $header-text;
+  font-family: 'MyFont', sans-serif;
+}
+
+p {
   font-size: 1.8rem
 }
-h2{
+
+h2 {
   font-size: 3.8rem;
 }
-h3{
+
+h3 {
   font-size: 2.1rem
 }
 
-h5{
-  font-size: 3rem;
-  font-family: 'Sacramento', cursive;
+h5 {
+  font-size: 2rem;
+  font-family: 'Myfont3', cursive;
   color: $clr-paragraph2;
-  width:fit-content
+  width: fit-content
 }
 
-small{
+small {
   font-size: 1.2rem;
 }
+
 a,
 ul {
   list-style: none;
@@ -135,4 +161,3 @@ ul {
   color: $header-text;
   font-size: 1.6rem;
 }
-
