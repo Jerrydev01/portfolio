@@ -1,10 +1,7 @@
 @use '../sass/_color-text-mixins.scss'as *;
 
-.logo a {
-    font-family: 'Myfont3', cursive;
-    font-size: 3rem;
-    font-weight: bold;
-    animation: colorChange ease-in-out 5s 1s infinite alternate;
+.logo img {
+    width: 7rem;
 }
 
 @keyframes colorChange {
@@ -60,7 +57,8 @@
                 a {
                     transition: all 0.5s ease;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         color: $clr-paragraph2;
                         border-bottom: 1px solid $clr-paragraph2;
 
@@ -184,13 +182,16 @@
         transition: all 0.3s ease-in-out;
         cursor: pointer;
     }
-    span:nth-child(1){
+
+    span:nth-child(1) {
         width: 40px;
     }
-    span:nth-child(2){
+
+    span:nth-child(2) {
         margin-left: 10px;
     }
-    span:nth-child(3){
+
+    span:nth-child(3) {
         width: 20px;
         margin-left: 20px;
     }
@@ -199,6 +200,5 @@
 /* Active link */
 .active-link {
     color: $clr-paragraph2;
-   
-}
 
+}

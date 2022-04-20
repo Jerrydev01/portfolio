@@ -694,6 +694,12 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -835,11 +841,8 @@ ul {
   font-size: 1.6rem;
 }
 
-.logo a {
-  font-family: "Myfont3", cursive;
-  font-size: 3rem;
-  font-weight: bold;
-  animation: colorChange ease-in-out 5s 1s infinite alternate;
+.logo img {
+  width: 7rem;
 }
 
 @keyframes colorChange {
@@ -1196,6 +1199,82 @@ ul {
   }
 }
 
+/* modal part */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.799);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transform: scale(1.1);
+  z-index: 102;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  animation-name: animatePortfolio;
+}
+.modal p {
+  padding-block: 0.5rem;
+  /* animation part */
+}
+.modal p i {
+  padding-right: 1rem;
+  color: #e7524e;
+  animation: modalIcon 5s ease-out infinite alternate;
+}
+@keyframes modalIcon {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  align-self: center;
+  background-color: #25262A;
+  padding: 2rem;
+  width: max(40vw, 30rem);
+  border-radius: 0.5rem;
+}
+
+.btn-close {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.btn-close:hover {
+  background-color: #e7524e;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  animation-duration: 0.4s;
+}
+
+/* animation part */
+@keyframes animatePortfolio {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
 .review-sec {
   padding: 7rem 15rem;
   background-color: #2D2E32;
@@ -1607,7 +1686,7 @@ p {
     padding: 7rem 10rem;
   }
 }
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 750px) {
   body,
 p {
     font-size: 1.6rem;

@@ -9,7 +9,7 @@ $clr-paragraph:#8E8E97;
 $clr-paragraph2: rgb(231, 82, 78);
 $bg-sec-color: #2D2E32;
 $bg-body: #25262A;
-$white : white;// =============================================s========================
+$white : white; // =============================================s========================
 // section margin by screen
 // desktop
 $margin-l: 5rem 10rem;
@@ -26,11 +26,19 @@ $margin-s: 2rem 4rem;
 
 @mixin link2 {
     color: $clr-paragraph2;
-                border-bottom: 1px solid $clr-paragraph2;
-                transition: all 0.5s ease;
+    border-bottom: 1px solid $clr-paragraph2;
+    transition: all 0.5s ease;
 }
+
 @mixin center() {
     margin: auto;
     display: grid;
     place-items: center;
+}
+
+// layout
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }

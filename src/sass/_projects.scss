@@ -3,10 +3,12 @@
 .portfolio-sec {
     padding: $margin-sec;
     background-color: $bg-sec-color;
-    h5{
+
+    h5 {
         margin: 0 auto;
-    
-}
+
+    }
+
     h2 {
         text-align: center;
         margin-bottom: 1rem;
@@ -50,41 +52,50 @@
                     aspect-ratio: 1 / 1;
                     cursor: pointer;
                 }
-                .project-h3{
+
+                .project-h3 {
                     padding: 2rem 1rem;
-                   p{
-                       
-                       padding-top: .5rem;
-                    a{
-                        display: flex;
-                       align-items: center;
-                        color: $clr-paragraph2;
-                        i{
-                            padding-left: 1rem;
-                            animation: icon ease-in-out 1.5s infinite alternate;
-                        }
-                        @keyframes icon {
-                            from {
-                                transform: translateX(-5px);
+
+                    p {
+
+                        padding-top: .5rem;
+
+                        a {
+                            display: flex;
+                            align-items: center;
+                            color: $clr-paragraph2;
+
+                            i {
+                                padding-left: 1rem;
+                                animation: icon ease-in-out 1.5s infinite alternate;
                             }
-                            to{
-                                transform: translateX(0)
+
+                            @keyframes icon {
+                                from {
+                                    transform: translateX(-5px);
+                                }
+
+                                to {
+                                    transform: translateX(0)
+                                }
                             }
                         }
                     }
-                   }
                 }
 
                 .project-item {
-                    @include box-l() ;
+                    @include box-l();
                     background-color: $bg-body;
                     padding: 1rem;
+
                     &.show {
                         animation: fadeIn 0.5s ease;
                     }
+
                     &.hide {
                         display: none;
                     }
+
                     @keyframes fadeIn {
                         from {
                             opacity: 0;
@@ -93,10 +104,154 @@
                         to {
                             opacity: 1;
                         }
+                    }
                 }
             }
         }
     }
+
 }
 
+/* modal part */
+// #modal-background {
+//     display: none;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+// }
+
+// #modal {
+//     background-color: #fff;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 200px;
+//     padding: 10px 20px;
+//     border-radius: 5px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+//     font-size: 1.5rem;
+//     animation-name: animatePortfolio;
+//     animation-duration: 0.4s;
+// }
+
+// /* animation part */
+// @keyframes animatePortfolio {
+//     from {
+//         top: -300px;
+//         opacity: 0;
+//     }
+
+//     to {
+//         top: 50%;
+//         opacity: 1;
+//     }
+// }
+
+// #close-btn {
+//     align-self: flex-end;
+// }
+
+// .show-modal {
+//     opacity: 1;
+//     visibility: visible;
+//     transform: scale(1);
+//     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+// }
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.799);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: scale(1.1);
+
+    z-index: 102;
+
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    animation-name: animatePortfolio;
+
+    p {
+        padding-block: .5rem;
+
+        i {
+            padding-right: 1rem;
+            color: $clr-paragraph2;
+            animation: modalIcon 5s ease-out infinite alternate;
+        }
+
+        /* animation part */
+        @keyframes modalIcon {
+            from {
+
+                opacity: 0.5;
+            }
+
+            to {
+
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+.modal-content {
+    align-self: center;
+    background-color: $bg-body;
+    padding: 2rem;
+    width: max(40vw, 30rem);
+
+    border-radius: 0.5rem;
+}
+
+.btn-close {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+
+    &:hover {
+        background-color: $clr-paragraph2;
+    }
+
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    animation-duration: 0.4s;
+}
+
+
+/* animation part */
+@keyframes animatePortfolio {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
 }

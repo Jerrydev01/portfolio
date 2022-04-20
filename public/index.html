@@ -20,7 +20,7 @@
         <header>
             <div class="header-sec">
                 <div class="logo">
-                    <a href="">Jerry</a>
+                    <a href=""><img src="./img/logo.svg" alt="jerry-logo"></a>
                 </div>
                 <nav class="navmenue nav_scroll">
                     <ul class="navmenue-ul">
@@ -90,7 +90,20 @@
     <section id="about">
         <div class="about-sec">
             <div class="special">
-                <a href="#web-design">
+                <a class="trigger" href="#web-design">
+                    <div class="about-specials">
+                        <div>
+                            <img src="./img/coding.svg" alt="">
+                        </div>
+                        <div class="about-special-text">
+                            <div>
+                                <h3>Web Development </h3>
+                            </div>
+                            <p>4 Projects </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="trigger" href="#web-design">
                     <div class="about-specials">
                         <div>
                             <img src="./img/figma-1.svg" alt="figma.svg">
@@ -101,18 +114,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#web-design">
-                    <div class="about-specials">
-                        <div>
-                            <img src="./img/coding.svg" alt="">
-                        </div>
-                        <div class="about-special-text">
-                            <h3>Web Development</h3>
-                            <p>4 Projects</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#web-design">
+
+                <a class="trigger" href="#web-design">
                     <div class="about-specials">
                         <div>
                             <img src="./img/webflow.svg" alt="webflow">
@@ -145,8 +148,66 @@
                 </div>
             </div>
         </div>
+
     </section>
 
+    <!-- Modal Background and Modal -->
+
+    <section>
+        <div class="modal">
+            <div class="modal-content"><span class="btn-close">&times;</span>
+                <h3>Web Development</h3>
+                <p>I am skilled in the following web technologies</p>
+                <p><strong>Tools</strong></p>
+                <p><i class="fa-brands fa-sass"> </i>Sass/scss</p>
+                <p><i class="fa-brands fa-js"></i> JavaScript</p>
+                <p><i class="fa-brands fa-react"></i> React (I am also dabling into React Native)</p>
+                <p><i class="fa-solid fa-wind"></i>Tailwind css</p>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content"><span class="btn-close">&times;</span>
+                <h3>Web Design</h3>
+                <p>Although web design isn't my greatest strength but it worth to mention that am experience in creating
+                    and
+                    converting my designs or those of other designers into responsive and yet interactive websites.</p>
+                <p><strong>Tools</strong></p>
+                <p><i class="fa-brands fa-figma"></i> </i>Figma</p>
+
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content"><span class="btn-close">&times;</span>
+                <h3>Webflow</h3>
+                <p>As a web developer i have to gain practical knowledge of the tools that allows me to get things
+                    done even faster than normal. Webflow is a no code web builder that allows me to build amazing
+                    dynamic websites in a very short amount of time.</p>
+                <p><strong>Tools</strong></p>
+                <p><i class="fa-regular fa-w"></i> Webflow</p>
+
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content"><span class="btn-close">&times;</span>
+                <p>Modal 5</p>
+                <p>Content 1</p>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content"><span class="btn-close">&times;</span>
+                <p>Modal 6</p>
+                <p>Content 2</p>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content"><span class="btn-close">&times;</span>
+                <p>Modal 6</p>
+                <p>Content 2</p>
+            </div>
+        </div>
+    </section>
     <!-- ==================ABOUT ENDS=================================-->
 
     <section id="portfolio">
@@ -156,10 +217,7 @@
                 <h2 class="">My Latest Projects</h2>
             </div>
             <div class="container-portfolio">
-                <div class="full-img" id="fullImgBox">
-                    <img id="fullImg" src="./img/apwen_img/apwen/20210211_135424.jpg" alt="">
-                    <span class="x" onclick="closeFullImg();">X</span>
-                </div>
+
                 <div class="row-project">
                     <div class="project-filter">
                         <span class="filter-item active" data-filter="all">
@@ -177,45 +235,74 @@
                     </div>
 
 
-                    <!-- =========WebDesign area starts========= -->
-                    <div class="grid-projects">
-                        <div class="project-item WebDesign">
-                            <div class="project-item-inner">
-                                <img src="./img/img1.png" alt="" onclick="openFullImg(this.src);">
-                                <div class="project-h3">
-                                    <h3>
-                                        Web Design</h3>
-                                    </h3>
-                                    <p><a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
 
+
+
+                    <div class="grid-projects">
 
                         <!-- =========web developer area starts========= -->
 
                         <div class="project-item WebDevelopment">
                             <div class="project-item-inner">
-                                <img src="./img/img2.png" alt="" onclick="openFullImg(this.src);">
+                                <img src="./img/img2.png" alt="">
                                 <div class="project-h3">
                                     <h3>
-                                        Web Dev.</h3>
+                                        Web Dev.
                                     </h3>
-                                    <p><a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a></p>
+                                    <p class="flex-space">
+                                        <a class="trigger" href="#WebDevelopment">Overview <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                        <a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                        <a href="#">Github <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- =========WebDesign area starts========= -->
+                        <div class="project-item WebDesign">
+                            <div class="project-item-inner t">
+                                <img src="./img/img1.png" alt="">
+                                <div class="project-h3">
+                                    <h3>
+                                        Web Design</h3>
+                                    </h3>
+                                    <p class="flex-space">
+                                        <a class="trigger" href="#WebDesign">Overview <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                        <a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                        <a href="#">Github <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <!-- =========webflow area starts========= -->
 
                         <div class="project-item Webflow">
                             <div class="project-item-inner">
-                                <img src="./img/img1.png" alt="" onclick="openFullImg(this.src);">
+                                <img src="./img/img1.png" alt="">
                                 <div class="project-h3">
                                     <h3>
                                         Webflow</h3>
                                     </h3>
-                                    <p><a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a></p>
+                                    <p class="flex-space">
+                                        <a class="trigger" href="#Webflow">Overview <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                        <a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                        <a href="#">Github <i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href=""></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -224,6 +311,7 @@
                     </div>
                 </div>
             </div>
+
 
     </section>
     <!-- ============== PORTFOLIO END ================ -->
@@ -372,7 +460,7 @@
         <div class="copyright">
             <div class="copy">
                 <div class="logo">
-                    <p> <a href="#">Jerry</a></p>
+                    <p> <a href="#"><img src="./img/logo.svg" alt="jerry-logo"></a></p>
                     <div class="border"></div>
                     <p> <span>&copy; 2022 All rights reserved</span></p>
                 </div>
@@ -386,22 +474,22 @@
         </div>
     </section>
 
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-        <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 
-        <!-- typing text scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            var typed = new Typed(".type-text", {
-                strings: ["I'm Jerry."],
-                typeSpeed: 150,
-                backSpeed: 150,
-                loop: true,
-            });
-        </script>
+    <!-- typing text scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".type-text", {
+            strings: ["I'm Jerry."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
