@@ -1,78 +1,93 @@
-@use '../sass/_color-text-mixins.scss' as *;
+@use '../sass/_color-text-mixins.scss'as *;
+
 #contact {
     padding: $margin-sec;
+
     .footer-sec {
-       height: 100%;
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: space-between;
-        .footer-one{
-            h5{
+
+        .footer-one {
+            h5 {
                 margin-top: 5rem;
             }
-            h3, a{
+
+            h3,
+            a {
                 font-size: 2.5rem;
-                
+
             }
-            a{
+
+            a {
                 @include link2;
-                &:hover{
-                    opacity:0.5;
+
+                &:hover {
+                    opacity: 0.5;
                 }
             }
         }
-        .footer-socials{
+
+        .footer-socials {
             justify-self: flex-end;
-            i{
+
+            i {
                 font-size: 3rem;
                 padding: 1rem 1rem 1rem 0;
             }
-            .social-link{
-             margin-block: 1rem;
-          
-             a:hover{
-                color: $clr-paragraph2;
-                transition: all 0.5s ease;
-             }
+
+            .social-link {
+                margin-block: 1rem;
+
+                a:hover {
+                    color: $clr-paragraph2;
+                    transition: all 0.5s ease;
+                }
             }
-            .nav-footer{
-                display:grid;
+
+            .nav-footer {
+                display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                a:hover{
+
+                a:hover {
                     @include link2;
                 }
             }
         }
     }
-    
+
     hr {
         margin-block: 5rem;
         border-color: rgba(175, 171, 171, 0.398);
         border-bottom: none;
     }
-    .copyright{
-        .copy{
+
+    .copyright {
+        .copy {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .logo{
+
+            .logo {
                 display: flex;
                 justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-                .border{
-                   height: 2rem;
+                align-items: center;
+                gap: 2rem;
+
+                .border {
+                    height: 2rem;
                     border-right: 1px solid rgba(206, 207, 208, 0.893);
-                    
                 }
-               
             }
+
             .dev {
-                a{
+                a {
                     @include link2;
-                    &:hover{
-                        opacity:0.5;
+
+                    &:hover {
+                        opacity: 0.5;
                     }
                 }
             }

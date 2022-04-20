@@ -1371,7 +1371,8 @@ ul {
 #contact .footer-sec .footer-one h5 {
   margin-top: 5rem;
 }
-#contact .footer-sec .footer-one h3, #contact .footer-sec .footer-one a {
+#contact .footer-sec .footer-one h3,
+#contact .footer-sec .footer-one a {
   font-size: 2.5rem;
 }
 #contact .footer-sec .footer-one a {
