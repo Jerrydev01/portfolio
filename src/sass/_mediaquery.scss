@@ -4,7 +4,7 @@
 
 
         // landscape
-        @media only screen and (min-width: 300px) and (max-width: 1000px) {
+        @media only screen and (min-width: 300px) and (max-width: 900px) {
             .active .bar:nth-child(2) {
                 opacity: 0;
             }
@@ -164,9 +164,10 @@
         }
 
         /*================= tablet screen================*/
-        @media only screen and (min-width: 768px) and (max-width: 1000px) {
+        @media only screen and (min-width: 768px) and (max-width: 950px) {
             body {
                 font-size: 1.6rem;
+
             }
 
             h1 {
@@ -315,6 +316,14 @@
             .portfolio-sec {
                 padding: $margin-sec-landscape;
 
+                .container-portfolio {
+                    .row-project {
+                        .grid-projects {
+
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                }
 
 
                 h3 {

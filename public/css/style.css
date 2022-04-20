@@ -1212,6 +1212,7 @@ ul {
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  overflow-x: hidden;
   transform: scale(1.1);
   z-index: 102;
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
@@ -1239,7 +1240,7 @@ ul {
   align-self: center;
   background-color: #25262A;
   padding: 2rem;
-  width: max(40vw, 30rem);
+  width: max(40vw, 35rem);
   border-radius: 0.5rem;
 }
 
@@ -1435,7 +1436,7 @@ ul {
   opacity: 0.5;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1000px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -1551,7 +1552,7 @@ p {
   }
 }
 /*================= tablet screen================*/
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 950px) {
   body {
     font-size: 1.6rem;
   }
@@ -1666,6 +1667,9 @@ p {
 
   .portfolio-sec {
     padding: 7rem 10rem;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects {
+    grid-template-columns: repeat(2, 1fr);
   }
   .portfolio-sec h3 {
     font-size: 1.6rem;
