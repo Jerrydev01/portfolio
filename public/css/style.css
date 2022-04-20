@@ -1240,7 +1240,7 @@ ul {
   align-self: center;
   background-color: #25262A;
   padding: 2rem;
-  width: max(40vw, 35rem);
+  width: max(40vw, 3rem);
   border-radius: 0.5rem;
 }
 
@@ -1526,6 +1526,10 @@ p {
   #about .about-sec .about-header {
     position: relative;
     top: -3rem;
+  }
+
+  .portfolio-sec {
+    padding: 10rem 10rem;
   }
 
   #experience .experience-sec {
