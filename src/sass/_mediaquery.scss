@@ -399,6 +399,7 @@
             // header section
             #header {
                 background-image: none;
+                height: fit-content;
 
                 .header-sec {
                     padding: $margin-s;
@@ -445,13 +446,13 @@
                         display: block;
 
                         img {
-                            max-width: 25rem;
+                            max-width: 30rem;
                             height: 100%;
                             margin: 0 auto;
-                            position: relative;
-                            transform: translateY(-13px);
+                            // position: relative;
+ // transform: translateY(-13px);
 
-                            z-index: 1;
+
                         }
                     }
 
