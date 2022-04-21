@@ -39,6 +39,7 @@ $margin-s: 2rem 4rem;
 // layout
 .flex-space {
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
 }

@@ -696,7 +696,8 @@ button.swiper-pagination-bullet {
 
 .flex-space {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -1162,6 +1163,10 @@ ul {
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p {
   padding-top: 0.5rem;
 }
+.portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p img:hover {
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p a {
   display: flex;
   align-items: center;
@@ -1183,6 +1188,7 @@ ul {
   box-shadow: 0px 0px 10px 5px #2D2E32;
   background-color: #25262A;
   padding: 1rem;
+  border-radius: 1rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-item.show {
   animation: fadeIn 0.5s ease;
@@ -1312,11 +1318,11 @@ ul {
   line-height: 1.5rem;
   text-align: center;
   cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
+  font-size: 2rem;
 }
 .btn-close:hover {
   background-color: #e7524e;
+  color: white;
 }
 
 .show-modal {
