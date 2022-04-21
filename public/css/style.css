@@ -1235,12 +1235,74 @@ ul {
     opacity: 1;
   }
 }
-
-.modal-content {
+.modal .modal-content {
   align-self: center;
   background-color: #25262A;
   padding: 2rem;
   width: max(45vw, 35rem);
+  border-radius: 0.5rem;
+}
+
+.modal-contact {
+  margin-top: 5rem;
+  text-align: center;
+}
+.modal-contact .contactMe {
+  width: max(20vw, 35rem);
+}
+.modal-contact .contactMe div {
+  padding: 1rem 0.5rem;
+  position: relative;
+  margin: 0 auto;
+}
+.modal-contact .contactMe div label {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 4rem;
+  position: absolute;
+  opacity: 1;
+  transition: 0.2s bottom, 0.2s opacity;
+  bottom: 1.5rem;
+  left: 0;
+  z-index: 1;
+}
+.modal-contact .contactMe input,
+.modal-contact .contactMe textarea {
+  border: none;
+  border-bottom: 1px solid #efe9e9;
+  outline: none;
+  color: whitesmoke;
+  background-color: #25262A;
+  width: 80%;
+  resize: none;
+  font-family: inherit;
+  padding: 1rem;
+  z-index: 3;
+  position: relative;
+  margin-top: 1rem;
+}
+.modal-contact .contactMe input:focus:invalid,
+.modal-contact .contactMe textarea:focus:invalid {
+  border-color: #e7524e;
+}
+.modal-contact input:focus ~ label,
+.modal-contact textarea:focus ~ label {
+  bottom: 75%;
+  line-height: 1;
+  opacity: 1;
+  padding: 4px;
+  margin-left: 4rem;
+}
+.modal-contact textarea:focus ~ label {
+  bottom: 82%;
+}
+.modal-contact button {
+  width: 50%;
+  background-color: #e7524e;
+  color: whitesmoke;
+  padding: 1rem;
+  border: none;
   border-radius: 0.5rem;
 }
 

@@ -209,16 +209,101 @@
         }
     }
 
+    .modal-content {
+        align-self: center;
+        background-color: $bg-body;
+        padding: 2rem;
+        width: max(45vw, 35rem);
+        border-radius: 0.5rem;
+    }
+
+
 }
 
-.modal-content {
-    align-self: center;
-    background-color: $bg-body;
-    padding: 2rem;
-    width: max(45vw, 35rem);
+.modal-contact {
+    margin-top: 5rem;
+    text-align: center;
 
-    border-radius: 0.5rem;
+
+
+    .contactMe {
+        width: max(20vw, 35rem);
+
+
+        div {
+            padding: 1rem .5rem;
+            position: relative;
+
+            margin: 0 auto;
+
+            label {
+                text-align: left;
+                display: flex;
+                align-items: flex-start;
+
+                margin-left: 4rem;
+                position: absolute;
+                opacity: 1;
+                transition: .2s bottom, .2s opacity;
+                bottom: 1.5rem;
+                left: 0;
+                z-index: 1;
+
+            }
+
+
+        }
+
+        input,
+        textarea {
+            border: none;
+            border-bottom: 1px solid $header-text;
+            outline: none;
+            color: whitesmoke;
+            background-color: $bg-body;
+            width: 80%;
+            resize: none;
+            font-family: inherit;
+            padding: 1rem;
+            z-index: 3;
+            position: relative;
+            margin-top: 1rem;
+
+        }
+
+        input:focus:invalid,
+        textarea:focus:invalid {
+            border-color: $clr-paragraph2;
+
+        }
+
+    }
+
+
+    input:focus~label,
+    textarea:focus~label {
+        bottom: 75%;
+        line-height: 1;
+        opacity: 1;
+        padding: 4px;
+        margin-left: 4rem;
+
+    }
+
+    textarea:focus~label {
+        bottom: 82%;
+    }
+
+    button {
+        width: 50%;
+        background-color: $clr-paragraph2;
+        color: whitesmoke;
+        padding: 1rem;
+        border: none;
+        border-radius: 0.5rem;
+    }
 }
+
 
 .btn-close {
     float: right;

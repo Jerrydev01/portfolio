@@ -217,10 +217,39 @@
             </div>
         </div>
         <!-- contact modal -->
-        <div class="modal">
-            <div class="modal-content"><span class="btn-close">&times;</span>
-                <p>Modal 8</p>
-                <p>Content 2</p>
+        <div class="modal modal-contact">
+            <div class="modal-content contactMe"><span class="btn-close">&times;</span>
+                <h3>Contact Me</h3>
+                <p><strong>Please feel free to send me an email</strong></p>
+                <p><i class="fa-regular fa-envelope"></i> <a href="mailto:jerrydev01@gmail.com">jerrydev01@gmail.com</a>
+                </p>
+                <form action="https://formspree.io/f/mdobwqja" method="post">
+                    <div class="">
+
+                        <input type="text" name="name" id="name" placeholder="Full Name*" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="">
+
+                        <input type="email" name="email" id="email" placeholder="Email*" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="">
+
+                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="WhatsApp Number">
+                        <label for="phonenumber">Phone Number</label>
+                    </div>
+                    <div class="">
+
+                        <textarea name="message" id="message" cols="30" rows="2"
+                            placeholder="Please Write a Message ..." required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <div class=""><button type="submit">Send Message</button></div>
+
+
+                </form>
             </div>
         </div>
         <!-- contact modal end -->
@@ -475,7 +504,7 @@
 
                 <h2>Let us make something amazing together</h2>
                 <h5>Contact</h5>
-                <h3>Start by <a class="trigger" href="#contact">Saying Hi</a></h3>
+                <h3>Start by <a class="trigger" href="#contactMe">Saying Hi</a></h3>
             </div>
             <div class="footer-socials">
                 <div class="social-link">
