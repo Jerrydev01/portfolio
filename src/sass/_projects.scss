@@ -58,10 +58,14 @@
 
                     p {
                         img {
+                            margin-top: 1rem;
+
                             &:hover {
                                 filter: grayscale(1);
                                 transition: all 0.3s ease;
                             }
+
+
                         }
 
                         padding-top: .5rem;

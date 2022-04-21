@@ -1163,6 +1163,9 @@ ul {
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p {
   padding-top: 0.5rem;
 }
+.portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p img {
+  margin-top: 1rem;
+}
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p img:hover {
   filter: grayscale(1);
   transition: all 0.3s ease;
