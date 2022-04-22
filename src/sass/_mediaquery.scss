@@ -334,6 +334,7 @@
 
 
                                 &>img {
+
                                     width: 50%;
                                     flex-basis: 100px;
 
@@ -570,11 +571,12 @@
                                 flex-direction: column;
 
                                 &>img {
-                                    width: 100%;
-                                    order: -1;
-                                    aspect-ratio: 1 / 1;
-                                    object-fit: cover;
-                                    cursor: pointer;
+                                    display: none;
+                                    // width: 100%;
+                                    // order: -1;
+                                    // aspect-ratio: 1 / 1;
+                                    // object-fit: cover;
+                                    // cursor: pointer;
                                 }
 
                             }
@@ -661,4 +663,6 @@
                 }
 
             }
+
+
         }

@@ -1924,11 +1924,7 @@ p {
     flex-direction: column;
   }
   .portfolio-sec .container-portfolio .row-project .grid-projects .project-item-inner > img {
-    width: 100%;
-    order: -1;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    cursor: pointer;
+    display: none;
   }
   .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 {
     padding: 2rem 2rem;
