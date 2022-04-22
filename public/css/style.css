@@ -929,6 +929,9 @@ ul {
 #header .header-text .header-text-flex p {
   max-width: 30rem;
 }
+#header .header-text .header-text-flex .type-text {
+  color: #e7524e;
+}
 #header .header-text .cta {
   background-color: #25262A;
   padding: 1rem 1.5rem;
@@ -1148,17 +1151,26 @@ ul {
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
-.portfolio-sec .container-portfolio .row-project .grid-projects img {
-  width: 100%;
+.portfolio-sec .container-portfolio .row-project .grid-projects .project-item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-sec .container-portfolio .row-project .grid-projects .project-item-inner > img {
+  width: 50%;
   object-fit: cover;
-  aspect-ratio: 1/1;
   cursor: pointer;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 {
-  padding: 2rem 1rem;
+  padding: 2rem 5rem;
+  width: 70%;
+}
+.portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 i {
+  color: #e7524e;
+  padding-right: 1rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p {
   padding-top: 0.5rem;
@@ -1741,10 +1753,18 @@ p {
   }
 
   .portfolio-sec {
-    padding: 7rem 10rem;
+    padding: 7rem 5rem;
   }
   .portfolio-sec .container-portfolio .row-project .grid-projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects .project-item-inner > img {
+    width: 50%;
+    flex-basis: 100px;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 {
+    padding: 2rem 2rem;
+    width: 100%;
   }
   .portfolio-sec h3 {
     font-size: 1.6rem;
@@ -1899,6 +1919,20 @@ p {
   .portfolio-sec .container-portfolio .row-project .grid-projects {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects .project-item-inner {
+    flex-direction: column;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects .project-item-inner > img {
+    width: 100%;
+    order: -1;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 {
+    padding: 2rem 2rem;
+    width: 100%;
   }
 
   .review-sec {

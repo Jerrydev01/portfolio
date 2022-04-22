@@ -320,13 +320,30 @@
 
             // project section
             .portfolio-sec {
-                padding: $margin-sec-landscape;
+                padding: 7rem 5rem;
 
                 .container-portfolio {
                     .row-project {
                         .grid-projects {
 
-                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-columns: 1fr;
+
+                            .project-item-inner {
+
+
+
+
+                                &>img {
+                                    width: 50%;
+                                    flex-basis: 100px;
+
+                                }
+                            }
+
+                            .project-h3 {
+                                padding: 2rem 2rem;
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -548,6 +565,25 @@
                         .grid-projects {
                             grid-template-columns: 1fr;
                             margin-bottom: 2rem;
+
+                            .project-item-inner {
+                                flex-direction: column;
+
+                                &>img {
+                                    width: 100%;
+                                    order: -1;
+                                    aspect-ratio: 1 / 1;
+                                    object-fit: cover;
+                                    cursor: pointer;
+                                }
+
+                            }
+
+                            .project-h3 {
+                                padding: 2rem 2rem;
+                                width: 100%;
+
+                            }
                         }
                     }
                 }
