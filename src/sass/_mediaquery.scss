@@ -326,7 +326,7 @@
                     .row-project {
                         .grid-projects {
 
-                            grid-template-columns: 1fr;
+                            grid-template-columns: repeat(2, 1fr);
 
                             .project-item-inner {
 
@@ -507,6 +507,8 @@
 
             // Experience section
             #experience {
+                background-image: none;
+
                 .experience-sec {
                     margin: $margin-s;
 
@@ -531,6 +533,11 @@
                             img {
                                 height: 50rem;
 
+                            }
+
+                            .small-text {
+                                display: inline-block;
+                                padding-left: 1rem;
                             }
                         }
                     }
@@ -589,6 +596,12 @@
                         }
                     }
                 }
+            }
+
+            .portfolio-modal {
+                margin-top: 0;
+
+
             }
 
             // review section

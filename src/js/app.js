@@ -36,7 +36,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenueUl.classList.remove("show");
 }));
 
-
+// preloader
+const loader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});
 
 
 // filterable image gallery

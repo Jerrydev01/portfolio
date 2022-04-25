@@ -41,7 +41,7 @@
         position: fixed;
         z-index: 1000;
         top: 0;
-
+        padding-block: 1rem;
 
 
 
@@ -205,4 +205,45 @@
 .active-link {
     color: $clr-paragraph2;
 
+}
+
+// preloader
+#preloader {
+    background: black url(../img/jerry4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    bottom: 0;
+
+    .preloder-img {
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.883);
+        display: flex;
+
+        img {
+            width: max(10%, 10rem);
+            place-items: center;
+            align-items: center;
+            margin: auto;
+            animation: preloader 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes preloader {
+            from {
+                opacity: 0.5;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
 }
