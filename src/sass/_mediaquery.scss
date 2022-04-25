@@ -421,6 +421,7 @@
 
                 .header-sec {
                     padding: $margin-s;
+                    padding-block: 1rem;
                 }
 
                 .header-text {
@@ -600,8 +601,20 @@
 
             .portfolio-modal {
                 margin-top: 0;
+            }
 
+            .portfolio-modal-content {
+                margin-top: 0;
+            }
 
+            .modal-contact {
+                margin-top: 0;
+
+            }
+
+            .btn-close {
+
+                font-size: 3.5rem;
             }
 
             // review section
