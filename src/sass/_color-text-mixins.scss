@@ -4,12 +4,12 @@ $heading2: 3.2rem;
 $paragraph: 1.8rem;
 $link: 1.6rem;
 // colors
-$header-text:#E8EFF1;
-$clr-paragraph:#8E8E97;
-$clr-paragraph2: #e7524e;
-$bg-sec-color: #2D2E32;
-$bg-body: #25262A;
-$white : white; // =============================================s========================
+$header-text:hsl(193, 24%, 93%);
+$clr-paragraph:hsl(240, 4%, 57%);
+$clr-paragraph2: hsl(2, 76%, 61%);
+$bg-sec-color: hsl(228, 5%, 19%);
+$bg-body: hsl(228, 6%, 15%);
+$white : hsl(0, 0%, 100%); // =============================================s========================
 // section margin by screen
 // desktop
 $margin-l: 5rem 10rem;
