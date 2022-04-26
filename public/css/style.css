@@ -782,8 +782,8 @@ body,
 html {
   font-family: "MyFont2", sans-serif;
   font-size: 10px;
-  color: #8E8E97;
-  background-color: #25262A;
+  color: #8d8d96;
+  background-color: #242529;
   position: relative;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
@@ -807,7 +807,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #E8EFF1;
+  color: #e9f0f1;
   font-family: "MyFont", sans-serif;
 }
 
@@ -826,7 +826,7 @@ h3 {
 h5 {
   font-size: 2rem;
   font-family: "Myfont3", cursive;
-  color: #e7524e;
+  color: #e75550;
   width: fit-content;
 }
 
@@ -838,12 +838,12 @@ a,
 ul {
   list-style: none;
   text-decoration: none;
-  color: #E8EFF1;
+  color: #e9f0f1;
   font-size: 1.6rem;
 }
 
 span {
-  color: #e7524e;
+  color: #e75550;
 }
 
 .logo img {
@@ -852,10 +852,10 @@ span {
 
 @keyframes colorChange {
   0% {
-    color: #E8EFF1;
+    color: #e9f0f1;
   }
   50% {
-    color: #e7524e;
+    color: #e75550;
   }
   75% {
     color: #FF6600;
@@ -865,7 +865,7 @@ span {
   }
 }
 #header {
-  background-color: #2D2E32;
+  background-color: #2e2f33;
   background-image: url("../img/jerry4.png");
   height: 80rem;
   background-repeat: no-repeat;
@@ -873,7 +873,7 @@ span {
   background-position: center bottom;
 }
 #header .header-sec {
-  background-color: #2D2E32;
+  background-color: #2e2f33;
   width: 100%;
   padding: 1rem 10rem;
   display: flex;
@@ -897,8 +897,8 @@ span {
   transition: all 0.5s ease;
 }
 #header .header-sec .navmenue ul a:hover, #header .header-sec .navmenue ul a:focus {
-  color: #e7524e;
-  border-bottom: 1px solid #e7524e;
+  color: #e75550;
+  border-bottom: 1px solid #e75550;
 }
 #header .header-sec .navmenue ul .github {
   background-color: black;
@@ -911,7 +911,7 @@ span {
   width: 50px;
   height: 50px;
   justify-content: center;
-  box-shadow: 0px 0px 10px 5px #8E8E97;
+  box-shadow: 0px 0px 10px 5px #8d8d96;
   transition: all 0.5s ease;
 }
 #header .header-sec .navmenue ul .github a:hover {
@@ -927,7 +927,7 @@ span {
   align-items: center;
 }
 #header .header-text .header-text-flex h1 {
-  color: #E8EFF1;
+  color: #e9f0f1;
   font-size: 6rem;
   max-width: 38rem;
 }
@@ -935,23 +935,23 @@ span {
   max-width: 30rem;
 }
 #header .header-text .header-text-flex .type-text {
-  color: #e7524e;
+  color: #e75550;
 }
 #header .header-text .cta {
-  background-color: #25262A;
+  background-color: #242529;
   padding: 1rem 1.5rem;
   width: fit-content;
   width: -moz-fit-content;
   margin-top: 2rem;
   transition: all 0.5s ease;
-  box-shadow: 0px 0px 10px 2px #8E8E97;
+  box-shadow: 0px 0px 10px 2px #8d8d96;
 }
 #header .header-text .cta a {
   color: white;
   font-size: 2rem;
 }
 #header .header-text .cta:hover {
-  background-color: #e7524e;
+  background-color: #e75550;
 }
 #header .header-text .mobile-img {
   display: none;
@@ -968,7 +968,7 @@ span {
   align-items: center;
 }
 #header .header-text .exp-header .exp-years h2 {
-  color: #E8EFF1;
+  color: #e9f0f1;
   font-size: 6rem;
 }
 #header .header-text .exp-header .skillsimg {
@@ -994,7 +994,7 @@ span {
   height: 4px;
   width: 30px;
   margin-block: 3px;
-  background-color: #E8EFF1;
+  background-color: #e9f0f1;
   background-image: url("../img/span-bg.svg");
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -1012,7 +1012,7 @@ span {
 
 /* Active link */
 .active-link {
-  color: #e7524e;
+  color: #e75550;
 }
 
 #preloader {
@@ -1088,7 +1088,7 @@ span {
 }
 #experience .experience-sec .experence-list .esp2 hr {
   margin-block: 1rem;
-  border-color: #8E8E97;
+  border-color: #8d8d96;
 }
 #experience .experience-sec .experence-list .esp2 .small-text {
   display: none;
@@ -1132,8 +1132,8 @@ span {
   display: inline-block;
   margin-block: 1rem;
   padding: 1.5rem;
-  background-color: #2D2E32;
-  box-shadow: 0px 0px 9px 1px #2D2E32;
+  background-color: #2e2f33;
+  box-shadow: 0px 0px 9px 1px #2e2f33;
   transition: all 0.3s ease;
 }
 #about .about-sec a .about-specials {
@@ -1155,8 +1155,8 @@ span {
   }
 }
 #about .about-sec a:hover {
-  box-shadow: 0px 0px 20px 11px #2D2E32;
-  color: #e7524e;
+  box-shadow: 0px 0px 20px 11px #2e2f33;
+  color: #e75550;
 }
 #about .about-sec .about-header .total-projects {
   display: flex;
@@ -1171,7 +1171,7 @@ span {
 
 .portfolio-sec {
   padding: 7rem 15rem;
-  background-color: #2D2E32;
+  background-color: #2e2f33;
 }
 .portfolio-sec h5 {
   margin: 0 auto;
@@ -1191,7 +1191,7 @@ span {
   font-size: 1.5rem;
   display: inline-block;
   margin-bottom: 1rem;
-  background-color: #25262A;
+  background-color: #242529;
   border-radius: 2rem;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -1199,7 +1199,7 @@ span {
 }
 .portfolio-sec .container-portfolio .row-project .project-filter .filter-item.active {
   color: white;
-  background-color: #e7524e;
+  background-color: #e75550;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects {
   display: grid;
@@ -1215,7 +1215,7 @@ span {
   padding: 2rem 3rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 i {
-  color: #e7524e;
+  color: #e75550;
   padding-right: 1rem;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p {
@@ -1231,7 +1231,7 @@ span {
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p a {
   display: flex;
   align-items: center;
-  color: #e7524e;
+  color: #e75550;
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-h3 p a i {
   padding-left: 1rem;
@@ -1246,8 +1246,8 @@ span {
   }
 }
 .portfolio-sec .container-portfolio .row-project .grid-projects .project-item {
-  box-shadow: 0px 0px 10px 5px #2D2E32;
-  background-color: #25262A;
+  box-shadow: 0px 0px 10px 5px #2e2f33;
+  background-color: #242529;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -1291,7 +1291,7 @@ span {
 }
 .modal p i {
   padding-right: 1rem;
-  color: #e7524e;
+  color: #e75550;
   animation: modalIcon 5s ease-out infinite alternate;
 }
 @keyframes modalIcon {
@@ -1304,7 +1304,7 @@ span {
 }
 .modal .modal-content {
   align-self: center;
-  background-color: #25262A;
+  background-color: #242529;
   padding: 2rem;
   width: max(45vw, 35rem);
   border-radius: 0.5rem;
@@ -1341,10 +1341,10 @@ span {
 .modal-contact .contactMe input,
 .modal-contact .contactMe textarea {
   border: none;
-  border-bottom: 1px solid #E8EFF1;
+  border-bottom: 1px solid #e9f0f1;
   outline: none;
   color: whitesmoke;
-  background-color: #25262A;
+  background-color: #242529;
   width: 80%;
   resize: none;
   font-family: inherit;
@@ -1355,7 +1355,7 @@ span {
 }
 .modal-contact .contactMe input:focus:invalid,
 .modal-contact .contactMe textarea:focus:invalid {
-  border-color: #e7524e;
+  border-color: #e75550;
 }
 .modal-contact input:focus ~ label,
 .modal-contact textarea:focus ~ label {
@@ -1370,7 +1370,7 @@ span {
 }
 .modal-contact button {
   width: 50%;
-  background-color: #e7524e;
+  background-color: #e75550;
   color: whitesmoke;
   padding: 1rem;
   border: none;
@@ -1419,7 +1419,7 @@ span {
 
 .review-sec {
   padding: 7rem 15rem;
-  background-color: #2D2E32;
+  background-color: #2e2f33;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -1445,7 +1445,7 @@ span {
   padding-inline: 2rem;
   border-radius: 1rem;
   max-height: 20rem;
-  background-color: #25262A;
+  background-color: #242529;
   transition: all 0.5s ease;
 }
 .review-sec .mySwiperJerry .review-container .slider-review img {
@@ -1484,19 +1484,19 @@ span {
 }
 .review-sec .mySwiperJerry .next i,
 .review-sec .mySwiperJerry .prev i {
-  background-color: #25262A;
-  color: #E8EFF1;
+  background-color: #242529;
+  color: #e9f0f1;
   padding: 1rem;
   border-radius: 50%;
   width: 5rem;
   display: grid;
   place-items: center;
   height: 5rem;
-  box-shadow: 0px 0px 10px 5px #2D2E32;
+  box-shadow: 0px 0px 10px 5px #2e2f33;
 }
 .review-sec .mySwiperJerry .next i:hover,
 .review-sec .mySwiperJerry .prev i:hover {
-  background-color: #e7524e;
+  background-color: #e75550;
   color: white;
 }
 
@@ -1518,8 +1518,8 @@ span {
   font-size: 2.5rem;
 }
 #contact .footer-sec .footer-one a {
-  color: #e7524e;
-  border-bottom: 1px solid #e7524e;
+  color: #e75550;
+  border-bottom: 1px solid #e75550;
   transition: all 0.5s ease;
 }
 #contact .footer-sec .footer-one a:hover {
@@ -1536,7 +1536,7 @@ span {
   margin-block: 1rem;
 }
 #contact .footer-sec .footer-socials .social-link a:hover {
-  color: #e7524e;
+  color: #e75550;
   transition: all 0.5s ease;
 }
 #contact .footer-sec .footer-socials .nav-footer {
@@ -1544,8 +1544,8 @@ span {
   grid-template-columns: repeat(2, 1fr);
 }
 #contact .footer-sec .footer-socials .nav-footer a:hover {
-  color: #e7524e;
-  border-bottom: 1px solid #e7524e;
+  color: #e75550;
+  border-bottom: 1px solid #e75550;
   transition: all 0.5s ease;
 }
 #contact hr {
@@ -1569,8 +1569,8 @@ span {
   border-right: 1px solid rgba(206, 207, 208, 0.893);
 }
 #contact .copyright .copy .dev a {
-  color: #e7524e;
-  border-bottom: 1px solid #e7524e;
+  color: #e75550;
+  border-bottom: 1px solid #e75550;
   transition: all 0.5s ease;
 }
 #contact .copyright .copy .dev a:hover {
@@ -2053,8 +2053,8 @@ p {
     gap: 2rem;
   }
   #contact .copyright .copy .dev a {
-    color: #e7524e;
-    border-bottom: 1px solid #e7524e;
+    color: #e75550;
+    border-bottom: 1px solid #e75550;
     transition: all 0.5s ease;
   }
   #contact .copyright .copy .dev a:hover {
