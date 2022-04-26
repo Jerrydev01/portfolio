@@ -5,10 +5,10 @@
 </div>
 
 <h1 align="center">
- <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerryfrancis.github.io</a>
+ <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerrydev01.github.io</a>
 </h1>
 <p align="center">
-  The first iteration of my website <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerryfrancis.github.io</a> built with HTML,SCSS and JAVASCRIPT and hosted with <a href="https://www.github.com/" target="_blank">Github</a>
+  The first iteration of my website <a href="https://zeus012345.github.io/portfolio/public/" target="_blank">jerrydev01.github.io</a> built with HTML,SCSS and JAVASCRIPT and hosted with <a href="https://www.github.com/" target="_blank">Github</a>
 </p>
 <p align="center">
   Current iteration:
@@ -24,7 +24,7 @@ This is my personal portfolio website created to host and display the projects h
 
 ### TL;DR
 
-Yes, you can fork this repo. Please give me proper credit by linking back to <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerryfrancis.github.io</a>. Thanks!
+Yes, you can fork this repo. Please give me proper credit by linking back to <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerrydev01.github.io</a>. Thanks!
 
 ## 🛠 Installation & Set Up
 
