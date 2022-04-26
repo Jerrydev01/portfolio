@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   Current iteration:
-  <a href="https://zeus012345.github.io/portfolio/public/" target="_blank">v1</a>,
+  <a href="https://zeus012345.github.io/portfolio/public/" target="_blank">v1</a>
 </p>
 <div align="center">
   <img alt="Logo" src="https://github.com/Zeus012345/portfolio/blob/beta/public/img/imgdev1.png?raw=true" width="100%" />
@@ -27,10 +27,10 @@ Yes, you can fork this repo. Please give me proper credit by linking back to  <a
 
 ## 🛠 Installation & Set Up
 
-1. Install the Gatsby CLI
+1. Install the node_modules
 
    ```sh
-   npm install -g gatsby-cli
+   npm install 
    ```
 
 2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
@@ -50,15 +50,16 @@ Yes, you can fork this repo. Please give me proper credit by linking back to  <a
    ```sh
    npm start
    ```
-
+5. I Recommend watching this video by KevinPowel
+   <a href="https://www.youtube.com/watch?v=o4cECvhrBo8" target="_blank">Stop using an extension to compile Sass</a>
+   
 ## 🎨 Color Reference
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | very light shade of cyan     | ![##e8eff1](https://via.placeholder.com/10/e8eff1?text=+) `#e8eff1` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| shade of blue-magenta  | ![#8e8e97](https://via.placeholder.com/10/8e8e97?text=+) `#8e8e97` |
+| Mandy          | ![#e7524e](https://via.placeholder.com/10/e7524e?text=+) `#e7524e` |
+| shade of Ebony    | ![#2D2E32](https://via.placeholder.com/10/2D2E32?text=+) `#2D2E32` |
+| Tints of Black Russian | ![#25262A](https://via.placeholder.com/10/25262A?text=+) `#25262A` |
+| White          | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
