@@ -2,7 +2,6 @@
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/Zeus012345/portfolio/c03ffbcc5d26dc67a6a884b32cb4aae3cb3d7fdb/public/img/logo.svg" width="100" />
 </div>
-https://github.com/Zeus012345/portfolio/blob/beta/public/img/imgdev1.png?raw=true
 
 <h1 align="center">
  <a href="https://zeus012345.github.io/portfolio/public/" target="_blank">jerryfrancis.github.io</a>
@@ -14,4 +13,7 @@ https://github.com/Zeus012345/portfolio/blob/beta/public/img/imgdev1.png?raw=tru
   Current iteration:
   <a href="https://zeus012345.github.io/portfolio/public/" target="_blank">v1</a>,
 </p>
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+<div align="center">
+  <img alt="Logo" src="https://github.com/Zeus012345/portfolio/blob/beta/public/img/imgdev1.png?raw=true" width="100%" />
+</div>
+
