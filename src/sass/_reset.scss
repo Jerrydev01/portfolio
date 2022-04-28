@@ -165,3 +165,7 @@ ul {
 span {
   color: $clr-paragraph2;
 }
+
+.gray-out {
+  filter: grayscale(1);
+}

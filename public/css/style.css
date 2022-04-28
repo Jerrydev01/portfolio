@@ -846,6 +846,10 @@ span {
   color: #e75550;
 }
 
+.gray-out {
+  filter: grayscale(1);
+}
+
 .logo img {
   width: 7rem;
 }
