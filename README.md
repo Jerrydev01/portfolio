@@ -15,7 +15,7 @@
   <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">v1</a>
 </p>
 <div align="center">
-  <img alt="Logo" src="https://github.com/jerrydev01/portfolio/blob/beta/public/img/imgdev1.png?raw=true" width="100%" />
+  <img alt="Logo" src="![image](https://user-images.githubusercontent.com/36851589/165862890-a1f5376f-458b-49ff-8329-ebbc62b49c69.png)" width="100%" />
 </div>
 
 ## About Project (please read!)
