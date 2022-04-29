@@ -1,14 +1,13 @@
-<h1 align="center">
- <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">My Portfolio Website</a>
-</h1>
 
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/jerrydev01/portfolio/c03ffbcc5d26dc67a6a884b32cb4aae3cb3d7fdb/public/img/logo.svg" width="100" />
 </div>
-
 <h1 align="center">
- <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerrydev01.github.io</a>
+ <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">My Portfolio Website</a>
 </h1>
+<h2 align="center">
+ <a href="https://jerrydev01.github.io/portfolio/public/" target="_blank">jerrydev01.github.io</a>
+</h2>
 <p align="center">
   The first iteration of my website <a href="https://zeus012345.github.io/portfolio/public/" target="_blank">jerrydev01.github.io</a> built with HTML,SCSS and JAVASCRIPT and hosted with <a href="https://www.github.com/" target="_blank">Github</a>
 </p>
