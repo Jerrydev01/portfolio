@@ -55,14 +55,3 @@ Yes, you can fork this repo. Please give me proper credit by linking back to <a 
 
 5. I Recommend watching this video by KevinPowel
    <a href="https://www.youtube.com/watch?v=o4cECvhrBo8" target="_blank">Stop using an extension to compile Sass</a>
-
-## 🎨 Color Reference
-
-| Color                    | Hex                                                                 |
-| ------------------------ | ------------------------------------------------------------------- |
-| very light shade of cyan | ![##e8eff1](https://via.placeholder.com/10/e8eff1?text=+) `#e8eff1` |
-| shade of blue-magenta    | ![#8e8e97](https://via.placeholder.com/10/8e8e97?text=+) `#8e8e97`  |
-| Mandy                    | ![#e7524e](https://via.placeholder.com/10/e7524e?text=+) `#e7524e`  |
-| shade of Ebony           | ![#2D2E32](https://via.placeholder.com/10/2D2E32?text=+) `#2D2E32`  |
-| Tints of Black Russian   | ![#25262A](https://via.placeholder.com/10/25262A?text=+) `#25262A`  |
-| White                    | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff`  |
